@@ -862,6 +862,8 @@ public fun NavRow(
     icon: ImageVector? = null,
     @StringRes highlightKey: Int = 0,
     swipeActions: List<SwipeAction> = emptyList(),
+    /** The tile's colour, for a list of places that each have their own. Null wears the screen's. */
+    accent: Color? = null,
     onClick: () -> Unit,
 ) {
     // A value only sits beside the title while it fits there; a longer one
@@ -880,6 +882,7 @@ public fun NavRow(
             subtitle = subtitle.takeIf { below == null },
             supporting = supportingWith(subtitle, below?.let { { RowValueText(it) } }),
             icon = icon,
+            accent = accent,
             flightTo = route,
             swipeActions = swipeActions,
             // A value beside the title sits on the title's own line. In the
