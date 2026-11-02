@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d إعداد إضافي</item>
+        <item quantity="other">%1$d إعدادات إضافية</item>
+    </plurals>
+    <string name="about_setting_link_desc">نسخ الرابط إلى %1$s</string>
+    <string name="common_back">رجوع</string>
+    <string name="common_cancel">إلغاء</string>
+    <string name="common_decrease_setting_desc">تقليل %1$s</string>
+    <string name="common_disabled_open_setting">افتح الإعداد</string>
+    <string name="common_increase_setting_desc">زيادة %1$s</string>
+    <string name="common_ok">موافق</string>
+    <string name="common_reset_setting_desc">إعادة تعيين %1$s إلى الإعداد الافتراضي</string>
+    <string name="common_type_setting_value_desc">اكتب قيمة لـ %1$s</string>
+    <string name="common_value_range">من %1$s إلى %2$s</string>
+    <string name="common_value_range_error">اكتب رقماً من %1$s إلى %2$s</string>
+    <string name="favourites_add">إضافة إلى المفضلة</string>
+    <string name="favourites_copy_link">نسخ الرابط</string>
+    <string name="favourites_remove">إزالة من المفضلة</string>
+    <string name="home_hold_what_is_this">ما هذا؟</string>
+    <string name="home_info_desc">المزيد حول %1$s</string>
+    <string name="rows_reorder_handle_desc">إعادة ترتيب %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">إزالة %1$s</string>
+    <string name="settings_depth_everything">كل شيء</string>
+    <string name="settings_depth_everything_desc">كل إعداد في كل صفحة</string>
+    <string name="settings_depth_simple">بسيط</string>
+    <string name="settings_depth_simple_desc">الأساسيات، مثل لوحات المفاتيح الأخرى</string>
+    <string name="settings_depth_standard">قياسي</string>
+    <string name="settings_depth_standard_desc">الأساسيات والإضافات الشائعة</string>
+    <string name="shell_breadcrumb_also_under">أيضاً تحت %1$s</string>
+    <string name="shell_breadcrumb_open_desc">انتقل إلى %1$s</string>
+    <string name="shell_breadcrumb_top_desc">العودة إلى الأعلى</string>
+    <string name="values_number">%1$d</string>
+</resources>

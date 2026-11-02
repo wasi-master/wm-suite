@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d dodatkowe ustawienie</item>
+        <item quantity="other">%1$d dodatkowych ustawień</item>
+    </plurals>
+    <string name="about_setting_link_desc">Skopiuj link do %1$s</string>
+    <string name="common_back">Wstecz</string>
+    <string name="common_cancel">Anuluj</string>
+    <string name="common_decrease_setting_desc">Zmniejsz %1$s</string>
+    <string name="common_disabled_open_setting">Otwórz ustawienie</string>
+    <string name="common_increase_setting_desc">Zwiększ %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Przywróć domyślne ustawienie dla %1$s</string>
+    <string name="common_type_setting_value_desc">Wpisz wartość dla %1$s</string>
+    <string name="common_value_range">Od %1$s do %2$s</string>
+    <string name="common_value_range_error">Wpisz liczbę od %1$s do %2$s</string>
+    <string name="favourites_add">Dodaj do ulubionych</string>
+    <string name="favourites_copy_link">Kopiuj link</string>
+    <string name="favourites_remove">Usuń z ulubionych</string>
+    <string name="home_hold_what_is_this">Co to jest?</string>
+    <string name="home_info_desc">Więcej o %1$s</string>
+    <string name="rows_reorder_handle_desc">Zmień kolejność %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Usuń %1$s</string>
+    <string name="settings_depth_everything">Wszystko</string>
+    <string name="settings_depth_everything_desc">Każde ustawienie na każdej stronie</string>
+    <string name="settings_depth_simple">Prosty</string>
+    <string name="settings_depth_simple_desc">Podstawy, jak w innych klawiaturach</string>
+    <string name="settings_depth_standard">Standardowy</string>
+    <string name="settings_depth_standard_desc">Podstawy i typowe dodatki</string>
+    <string name="shell_breadcrumb_also_under">Również w %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Przejdź do %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Powrót na górę</string>
+    <string name="values_number">%1$d</string>
+</resources>

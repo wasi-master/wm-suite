@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d papildomas nustatymas</item>
+        <item quantity="other">%1$d papildomi nustatymai</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopijuoti nuorodą į %1$s</string>
+    <string name="common_back">Atgal</string>
+    <string name="common_cancel">Atšaukti</string>
+    <string name="common_decrease_setting_desc">Sumažinti %1$s</string>
+    <string name="common_disabled_open_setting">Atidaryti nustatymą</string>
+    <string name="common_increase_setting_desc">Padidinti %1$s</string>
+    <string name="common_ok">Gerai</string>
+    <string name="common_reset_setting_desc">Atkurti %1$s numatytąsias reikšmes</string>
+    <string name="common_type_setting_value_desc">Įveskite %1$s reikšmę</string>
+    <string name="common_value_range">Nuo %1$s iki %2$s</string>
+    <string name="common_value_range_error">Įveskite skaičių nuo %1$s iki %2$s</string>
+    <string name="favourites_add">Pridėti prie mėgstamiausių</string>
+    <string name="favourites_copy_link">Kopijuoti nuorodą</string>
+    <string name="favourites_remove">Pašalinti iš mėgstamiausių</string>
+    <string name="home_hold_what_is_this">Kas tai?</string>
+    <string name="home_info_desc">Daugiau apie %1$s</string>
+    <string name="rows_reorder_handle_desc">Pertvarkyti %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Pašalinti %1$s</string>
+    <string name="settings_depth_everything">Viskas</string>
+    <string name="settings_depth_everything_desc">Kiekvienas nustatymas kiekviename puslapyje</string>
+    <string name="settings_depth_simple">Paprasta</string>
+    <string name="settings_depth_simple_desc">Pagrindiniai dalykai, kaip ir kitose klaviatūrose</string>
+    <string name="settings_depth_standard">Standartinis</string>
+    <string name="settings_depth_standard_desc">Pagrindai ir dažniausiai naudojami papildymai</string>
+    <string name="shell_breadcrumb_also_under">Taip pat skiltyje %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Eiti į %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Atgal į viršų</string>
+    <string name="values_number">%1$d</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d ക്രമീകരണം കൂടി</item>
+        <item quantity="other">%1$d ക്രമീകരണങ്ങൾ കൂടി</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s-ലേക്കുള്ള ലിങ്ക് പകർത്തുക</string>
+    <string name="common_back">തിരികെ</string>
+    <string name="common_cancel">റദ്ദാക്കുക</string>
+    <string name="common_decrease_setting_desc">%1$s കുറയ്ക്കുക</string>
+    <string name="common_disabled_open_setting">ക്രമീകരണം തുറക്കുക</string>
+    <string name="common_increase_setting_desc">%1$s വർദ്ധിപ്പിക്കുക</string>
+    <string name="common_ok">ശരി</string>
+    <string name="common_reset_setting_desc">%1$s അതിന്റെ ഡിഫോൾട്ടിലേക്ക് പുനഃസജ്ജമാക്കുക</string>
+    <string name="common_type_setting_value_desc">%1$s-നായി ഒരു മൂല്യം ടൈപ്പ് ചെയ്യുക</string>
+    <string name="common_value_range">%1$s മുതൽ %2$s വരെ</string>
+    <string name="common_value_range_error">%1$s മുതൽ %2$s വരെയുള്ള ഒരു നമ്പർ ടൈപ്പ് ചെയ്യുക</string>
+    <string name="favourites_add">പ്രിയപ്പെട്ടവയിലേക്ക് ചേർക്കുക</string>
+    <string name="favourites_copy_link">ലിങ്ക് പകർത്തുക</string>
+    <string name="favourites_remove">പ്രിയപ്പെട്ടവയിൽ നിന്ന് നീക്കം ചെയ്യുക</string>
+    <string name="home_hold_what_is_this">ഇതെന്താണ്?</string>
+    <string name="home_info_desc">%1$s-നെ കുറിച്ച് കൂടുതൽ</string>
+    <string name="rows_reorder_handle_desc">%1$s പുനഃക്രമീകരിക്കുക</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s നീക്കം ചെയ്യുക</string>
+    <string name="settings_depth_everything">എല്ലാം</string>
+    <string name="settings_depth_everything_desc">എല്ലാ പേജിലെയും എല്ലാ ക്രമീകരണങ്ങളും</string>
+    <string name="settings_depth_simple">ലളിതം</string>
+    <string name="settings_depth_simple_desc">മറ്റ് കീബോർഡുകൾ പോലെയുള്ള അടിസ്ഥാന കാര്യങ്ങൾ</string>
+    <string name="settings_depth_standard">സ്റ്റാൻഡേർഡ്</string>
+    <string name="settings_depth_standard_desc">അടിസ്ഥാന കാര്യങ്ങളും സാധാരണ അധിക ഫീച്ചറുകളും</string>
+    <string name="shell_breadcrumb_also_under">%1$s-ന് കീഴിലും</string>
+    <string name="shell_breadcrumb_open_desc">%1$s-ലേക്ക് പോകുക</string>
+    <string name="shell_breadcrumb_top_desc">മുകളിലേക്ക് തിരികെ പോകുക</string>
+    <string name="values_number">%1$d</string>
+</resources>

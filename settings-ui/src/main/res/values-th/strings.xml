@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">การตั้งค่าอีก %1$d รายการ</item>
+        <item quantity="other">การตั้งค่าอีก %1$d รายการ</item>
+    </plurals>
+    <string name="about_setting_link_desc">คัดลอกลิงก์ไปยัง %1$s</string>
+    <string name="common_back">ย้อนกลับ</string>
+    <string name="common_cancel">ยกเลิก</string>
+    <string name="common_decrease_setting_desc">ลด %1$s</string>
+    <string name="common_disabled_open_setting">เปิดการตั้งค่า</string>
+    <string name="common_increase_setting_desc">เพิ่ม %1$s</string>
+    <string name="common_ok">ตกลง</string>
+    <string name="common_reset_setting_desc">รีเซ็ต %1$s เป็นค่าเริ่มต้น</string>
+    <string name="common_type_setting_value_desc">พิมพ์ค่าสำหรับ %1$s</string>
+    <string name="common_value_range">จาก %1$s ถึง %2$s</string>
+    <string name="common_value_range_error">พิมพ์ตัวเลขตั้งแต่ %1$s ถึง %2$s</string>
+    <string name="favourites_add">เพิ่มในรายการโปรด</string>
+    <string name="favourites_copy_link">คัดลอกลิงก์</string>
+    <string name="favourites_remove">นำออกจากรายการโปรด</string>
+    <string name="home_hold_what_is_this">นี่คืออะไร?</string>
+    <string name="home_info_desc">เพิ่มเติมเกี่ยวกับ %1$s</string>
+    <string name="rows_reorder_handle_desc">จัดลำดับ %1$s ใหม่</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">นำ %1$s ออก</string>
+    <string name="settings_depth_everything">ทุกอย่าง</string>
+    <string name="settings_depth_everything_desc">การตั้งค่าทุกอย่างในทุกหน้า</string>
+    <string name="settings_depth_simple">แบบง่าย</string>
+    <string name="settings_depth_simple_desc">ข้อมูลพื้นฐาน เช่นเดียวกับคีย์บอร์ดอื่นๆ</string>
+    <string name="settings_depth_standard">มาตรฐาน</string>
+    <string name="settings_depth_standard_desc">ข้อมูลพื้นฐานและสิ่งที่เพิ่มเติมทั่วไป</string>
+    <string name="shell_breadcrumb_also_under">ภายใต้ %1$s ด้วย</string>
+    <string name="shell_breadcrumb_open_desc">ไปที่ %1$s</string>
+    <string name="shell_breadcrumb_top_desc">กลับไปด้านบน</string>
+    <string name="values_number">%1$d</string>
+</resources>

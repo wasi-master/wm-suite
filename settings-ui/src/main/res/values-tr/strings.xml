@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d ayar daha</item>
+        <item quantity="other">%1$d ayar daha</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s bağlantısını kopyala</string>
+    <string name="common_back">Geri</string>
+    <string name="common_cancel">İptal</string>
+    <string name="common_decrease_setting_desc">%1$s değerini azalt</string>
+    <string name="common_disabled_open_setting">Ayarı aç</string>
+    <string name="common_increase_setting_desc">%1$s değerini artır</string>
+    <string name="common_ok">Tamam</string>
+    <string name="common_reset_setting_desc">%1$s ayarını varsayılana sıfırla</string>
+    <string name="common_type_setting_value_desc">%1$s için bir değer girin</string>
+    <string name="common_value_range">%1$s ile %2$s arası</string>
+    <string name="common_value_range_error">%1$s ile %2$s arasında bir sayı girin</string>
+    <string name="favourites_add">Favorilere ekle</string>
+    <string name="favourites_copy_link">Bağlantıyı kopyala</string>
+    <string name="favourites_remove">Favorilerden kaldır</string>
+    <string name="home_hold_what_is_this">Bu nedir?</string>
+    <string name="home_info_desc">%1$s hakkında daha fazla bilgi</string>
+    <string name="rows_reorder_handle_desc">%1$s öğesini yeniden sırala</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s öğesini kaldır</string>
+    <string name="settings_depth_everything">Her şey</string>
+    <string name="settings_depth_everything_desc">Her sayfadaki her ayar</string>
+    <string name="settings_depth_simple">Basit</string>
+    <string name="settings_depth_simple_desc">Diğer klavyeler gibi temel özellikler</string>
+    <string name="settings_depth_standard">Standart</string>
+    <string name="settings_depth_standard_desc">Temeller ve yaygın ekstralar</string>
+    <string name="shell_breadcrumb_also_under">Ayrıca %1$s altında</string>
+    <string name="shell_breadcrumb_open_desc">%1$s kısmına git</string>
+    <string name="shell_breadcrumb_top_desc">Başa dön</string>
+    <string name="values_number">%1$d</string>
+</resources>

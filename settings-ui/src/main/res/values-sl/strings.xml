@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d dodatna nastavitev</item>
+        <item quantity="other">%1$d dodatnih nastavitev</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopiraj povezavo do %1$s</string>
+    <string name="common_back">Nazaj</string>
+    <string name="common_cancel">Prekliči</string>
+    <string name="common_decrease_setting_desc">Zmanjšaj %1$s</string>
+    <string name="common_disabled_open_setting">Odprite nastavitev</string>
+    <string name="common_increase_setting_desc">Povečaj %1$s</string>
+    <string name="common_ok">V redu</string>
+    <string name="common_reset_setting_desc">Ponastavi %1$s na privzeto</string>
+    <string name="common_type_setting_value_desc">Vnesite vrednost za %1$s</string>
+    <string name="common_value_range">Od %1$s do %2$s</string>
+    <string name="common_value_range_error">Vnesite številko od %1$s do %2$s</string>
+    <string name="favourites_add">Dodaj med priljubljene</string>
+    <string name="favourites_copy_link">Kopiraj povezavo</string>
+    <string name="favourites_remove">Odstrani iz priljubljenih</string>
+    <string name="home_hold_what_is_this">Kaj je to?</string>
+    <string name="home_info_desc">Več o %1$s</string>
+    <string name="rows_reorder_handle_desc">Preuredi %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Odstrani %1$s</string>
+    <string name="settings_depth_everything">Vse</string>
+    <string name="settings_depth_everything_desc">Vsaka nastavitev na vsaki strani</string>
+    <string name="settings_depth_simple">Preprosto</string>
+    <string name="settings_depth_simple_desc">Osnovno, kot pri drugih tipkovnicah</string>
+    <string name="settings_depth_standard">Standardno</string>
+    <string name="settings_depth_standard_desc">Osnovne stvari in pogosti dodatki</string>
+    <string name="shell_breadcrumb_also_under">Tudi pod %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Pojdi na %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Nazaj na vrh</string>
+    <string name="values_number">%1$d</string>
+</resources>

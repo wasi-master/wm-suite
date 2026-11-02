@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d ďalšie nastavenie</item>
+        <item quantity="other">%1$d ďalších nastavení</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopírovať odkaz na %1$s</string>
+    <string name="common_back">Späť</string>
+    <string name="common_cancel">Zrušiť</string>
+    <string name="common_decrease_setting_desc">Znížiť %1$s</string>
+    <string name="common_disabled_open_setting">Otvoriť nastavenie</string>
+    <string name="common_increase_setting_desc">Zvýšiť %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Obnoviť %1$s na predvolené nastavenie</string>
+    <string name="common_type_setting_value_desc">Zadajte hodnotu pre %1$s</string>
+    <string name="common_value_range">Od %1$s do %2$s</string>
+    <string name="common_value_range_error">Zadajte číslo od %1$s do %2$s</string>
+    <string name="favourites_add">Pridať k obľúbeným</string>
+    <string name="favourites_copy_link">Kopírovať odkaz</string>
+    <string name="favourites_remove">Odstrániť z obľúbených</string>
+    <string name="home_hold_what_is_this">Čo je toto?</string>
+    <string name="home_info_desc">Viac o %1$s</string>
+    <string name="rows_reorder_handle_desc">Zmeniť poradie %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Odstrániť %1$s</string>
+    <string name="settings_depth_everything">Všetko</string>
+    <string name="settings_depth_everything_desc">Všetky nastavenia na každej stránke</string>
+    <string name="settings_depth_simple">Jednoduché</string>
+    <string name="settings_depth_simple_desc">Základné funkcie ako na ostatných klávesniciach</string>
+    <string name="settings_depth_standard">Štandardné</string>
+    <string name="settings_depth_standard_desc">Základy a bežné doplnky</string>
+    <string name="shell_breadcrumb_also_under">Tiež pod %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Prejsť na %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Späť na začiatok</string>
+    <string name="values_number">%1$d</string>
+</resources>

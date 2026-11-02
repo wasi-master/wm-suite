@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d הגדרה נוספת</item>
+        <item quantity="other">%1$d הגדרות נוספות</item>
+    </plurals>
+    <string name="about_setting_link_desc">העתק קישור ל-%1$s</string>
+    <string name="common_back">חזור</string>
+    <string name="common_cancel">ביטול</string>
+    <string name="common_decrease_setting_desc">הפחת %1$s</string>
+    <string name="common_disabled_open_setting">פתח את ההגדרה</string>
+    <string name="common_increase_setting_desc">הגדל את %1$s</string>
+    <string name="common_ok">אישור</string>
+    <string name="common_reset_setting_desc">אפס את %1$s לברירת המחדל שלו</string>
+    <string name="common_type_setting_value_desc">הקלד ערך עבור %1$s</string>
+    <string name="common_value_range">מ-%1$s עד %2$s</string>
+    <string name="common_value_range_error">הקלד מספר בין %1$s ל-%2$s</string>
+    <string name="favourites_add">הוספה למועדפים</string>
+    <string name="favourites_copy_link">העתק קישור</string>
+    <string name="favourites_remove">הסר מהמועדפים</string>
+    <string name="home_hold_what_is_this">מה זה?</string>
+    <string name="home_info_desc">עוד על %1$s</string>
+    <string name="rows_reorder_handle_desc">סדר מחדש את %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">הסר את %1$s</string>
+    <string name="settings_depth_everything">הכל</string>
+    <string name="settings_depth_everything_desc">כל הגדרה בכל דף</string>
+    <string name="settings_depth_simple">פשוט</string>
+    <string name="settings_depth_simple_desc">הבסיס, כמו במקלדות אחרות</string>
+    <string name="settings_depth_standard">סטנדרטי</string>
+    <string name="settings_depth_standard_desc">הבסיס והתוספות הנפוצות</string>
+    <string name="shell_breadcrumb_also_under">גם תחת %1$s</string>
+    <string name="shell_breadcrumb_open_desc">עבור אל %1$s</string>
+    <string name="shell_breadcrumb_top_desc">חזרה לראש הדף</string>
+    <string name="values_number">%1$d</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d setelan lagi</item>
+        <item quantity="other">%1$d setelan lagi</item>
+    </plurals>
+    <string name="about_setting_link_desc">Salin tautan ke %1$s</string>
+    <string name="common_back">Kembali</string>
+    <string name="common_cancel">Batal</string>
+    <string name="common_decrease_setting_desc">Kurangi %1$s</string>
+    <string name="common_disabled_open_setting">Buka pengaturan</string>
+    <string name="common_increase_setting_desc">Tingkatkan %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Atur ulang %1$s ke setelan default</string>
+    <string name="common_type_setting_value_desc">Ketik nilai untuk %1$s</string>
+    <string name="common_value_range">Dari %1$s hingga %2$s</string>
+    <string name="common_value_range_error">Ketik angka dari %1$s hingga %2$s</string>
+    <string name="favourites_add">Tambahkan ke favorit</string>
+    <string name="favourites_copy_link">Salin tautan</string>
+    <string name="favourites_remove">Hapus dari favorit</string>
+    <string name="home_hold_what_is_this">Apa ini?</string>
+    <string name="home_info_desc">Selengkapnya tentang %1$s</string>
+    <string name="rows_reorder_handle_desc">Urutkan ulang %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Hapus %1$s</string>
+    <string name="settings_depth_everything">Semuanya</string>
+    <string name="settings_depth_everything_desc">Setiap pengaturan di setiap halaman</string>
+    <string name="settings_depth_simple">Sederhana</string>
+    <string name="settings_depth_simple_desc">Dasar-dasarnya, seperti papan ketik lainnya</string>
+    <string name="settings_depth_standard">Standar</string>
+    <string name="settings_depth_standard_desc">Dasar-dasar dan tambahan umum</string>
+    <string name="shell_breadcrumb_also_under">Juga di bawah %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Buka %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Kembali ke atas</string>
+    <string name="values_number">%1$d</string>
+</resources>

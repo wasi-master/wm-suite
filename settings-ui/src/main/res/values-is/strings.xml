@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d stilling í viðbót</item>
+        <item quantity="other">%1$d stillingar í viðbót</item>
+    </plurals>
+    <string name="about_setting_link_desc">Afrita tengil á %1$s</string>
+    <string name="common_back">Til baka</string>
+    <string name="common_cancel">Hætta við</string>
+    <string name="common_decrease_setting_desc">Minnka %1$s</string>
+    <string name="common_disabled_open_setting">Opna stillinguna</string>
+    <string name="common_increase_setting_desc">Auka %1$s</string>
+    <string name="common_ok">Í lagi</string>
+    <string name="common_reset_setting_desc">Endurstilla %1$s í sjálfgefið gildi</string>
+    <string name="common_type_setting_value_desc">Sláðu inn gildi fyrir %1$s</string>
+    <string name="common_value_range">Frá %1$s til %2$s</string>
+    <string name="common_value_range_error">Sláðu inn tölu frá %1$s til %2$s</string>
+    <string name="favourites_add">Bæta við eftirlæti</string>
+    <string name="favourites_copy_link">Afrita tengil</string>
+    <string name="favourites_remove">Fjarlægja úr eftirlæti</string>
+    <string name="home_hold_what_is_this">Hvað er þetta?</string>
+    <string name="home_info_desc">Meira um %1$s</string>
+    <string name="rows_reorder_handle_desc">Endurraða %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Fjarlægja %1$s</string>
+    <string name="settings_depth_everything">Allt</string>
+    <string name="settings_depth_everything_desc">Allar stillingar á öllum síðum</string>
+    <string name="settings_depth_simple">Einfalt</string>
+    <string name="settings_depth_simple_desc">Grunnatriðin, eins og önnur lyklaborð</string>
+    <string name="settings_depth_standard">Staðlað</string>
+    <string name="settings_depth_standard_desc">Grunnatriðin og algeng viðbót</string>
+    <string name="shell_breadcrumb_also_under">Einnig undir %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Fara í %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Aftur efst</string>
+    <string name="values_number">%1$d</string>
+</resources>

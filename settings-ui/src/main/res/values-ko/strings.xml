@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d개의 설정 더 보기</item>
+        <item quantity="other">%1$d개의 설정 더 보기</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s 링크 복사</string>
+    <string name="common_back">뒤로</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_decrease_setting_desc">%1$s 감소</string>
+    <string name="common_disabled_open_setting">설정 열기</string>
+    <string name="common_increase_setting_desc">%1$s 증가</string>
+    <string name="common_ok">확인</string>
+    <string name="common_reset_setting_desc">%1$s을(를) 기본값으로 재설정</string>
+    <string name="common_type_setting_value_desc">%1$s에 대한 값을 입력하세요</string>
+    <string name="common_value_range">%1$s에서 %2$s까지</string>
+    <string name="common_value_range_error">%1$s에서 %2$s 사이의 숫자를 입력하세요</string>
+    <string name="favourites_add">즐겨찾기에 추가</string>
+    <string name="favourites_copy_link">링크 복사</string>
+    <string name="favourites_remove">즐겨찾기에서 제거</string>
+    <string name="home_hold_what_is_this">이게 무엇인가요?</string>
+    <string name="home_info_desc">%1$s에 대한 추가 정보</string>
+    <string name="rows_reorder_handle_desc">%1$s 순서 변경</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s 제거</string>
+    <string name="settings_depth_everything">모두</string>
+    <string name="settings_depth_everything_desc">모든 페이지의 모든 설정</string>
+    <string name="settings_depth_simple">간단히</string>
+    <string name="settings_depth_simple_desc">다른 키보드와 유사한 기본 설정입니다.</string>
+    <string name="settings_depth_standard">표준</string>
+    <string name="settings_depth_standard_desc">기본 기능 및 일반적인 추가 기능</string>
+    <string name="shell_breadcrumb_also_under">%1$s 아래에도 있음</string>
+    <string name="shell_breadcrumb_open_desc">%1$s(으)로 이동</string>
+    <string name="shell_breadcrumb_top_desc">맨 위로 돌아가기</string>
+    <string name="values_number">%1$d</string>
+</resources>

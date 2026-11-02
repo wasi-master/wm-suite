@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">o %1$d nastavení více</item>
+        <item quantity="other">o %1$d nastavení více</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopírovat odkaz na %1$s</string>
+    <string name="common_back">Zpět</string>
+    <string name="common_cancel">Zrušit</string>
+    <string name="common_decrease_setting_desc">Snížit %1$s</string>
+    <string name="common_disabled_open_setting">Otevřít nastavení</string>
+    <string name="common_increase_setting_desc">Zvýšit %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Obnovit %1$s na výchozí hodnotu</string>
+    <string name="common_type_setting_value_desc">Zadejte hodnotu pro %1$s</string>
+    <string name="common_value_range">Od %1$s do %2$s</string>
+    <string name="common_value_range_error">Zadejte číslo od %1$s do %2$s</string>
+    <string name="favourites_add">Přidat k oblíbeným</string>
+    <string name="favourites_copy_link">Kopírovat odkaz</string>
+    <string name="favourites_remove">Odstranit z oblíbených</string>
+    <string name="home_hold_what_is_this">Co je tohle?</string>
+    <string name="home_info_desc">Více o %1$s</string>
+    <string name="rows_reorder_handle_desc">Změnit pořadí %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Odstranit %1$s</string>
+    <string name="settings_depth_everything">Vše</string>
+    <string name="settings_depth_everything_desc">Všechna nastavení na všech stránkách</string>
+    <string name="settings_depth_simple">Jednoduché</string>
+    <string name="settings_depth_simple_desc">Základní funkce jako u jiných klávesnic</string>
+    <string name="settings_depth_standard">Standardní</string>
+    <string name="settings_depth_standard_desc">Základy a běžné doplňky</string>
+    <string name="shell_breadcrumb_also_under">Také pod %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Přejít na %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Zpět na začátek</string>
+    <string name="values_number">%1$d</string>
+</resources>

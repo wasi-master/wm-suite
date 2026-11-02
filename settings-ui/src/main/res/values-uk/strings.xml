@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">Ще %1$d налаштування</item>
+        <item quantity="other">Ще %1$d налаштувань</item>
+    </plurals>
+    <string name="about_setting_link_desc">Скопіювати посилання на %1$s</string>
+    <string name="common_back">Назад</string>
+    <string name="common_cancel">Скасувати</string>
+    <string name="common_decrease_setting_desc">Зменшити %1$s</string>
+    <string name="common_disabled_open_setting">Відкрити налаштування</string>
+    <string name="common_increase_setting_desc">Збільшити %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Скинути %1$s до значень за замовчуванням</string>
+    <string name="common_type_setting_value_desc">Введіть значення для %1$s</string>
+    <string name="common_value_range">Від %1$s до %2$s</string>
+    <string name="common_value_range_error">Введіть число від %1$s до %2$s</string>
+    <string name="favourites_add">Додати до обраного</string>
+    <string name="favourites_copy_link">Скопіювати посилання</string>
+    <string name="favourites_remove">Видалити з обраного</string>
+    <string name="home_hold_what_is_this">Що це?</string>
+    <string name="home_info_desc">Більше про %1$s</string>
+    <string name="rows_reorder_handle_desc">Змінити порядок %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Видалити %1$s</string>
+    <string name="settings_depth_everything">Усе</string>
+    <string name="settings_depth_everything_desc">Кожне налаштування на кожній сторінці</string>
+    <string name="settings_depth_simple">Простий</string>
+    <string name="settings_depth_simple_desc">Основні функції, як і в інших клавіатурах</string>
+    <string name="settings_depth_standard">Стандартно</string>
+    <string name="settings_depth_standard_desc">Основи та загальні додаткові функції</string>
+    <string name="shell_breadcrumb_also_under">Також у %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Перейти до %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Повернутися на початок</string>
+    <string name="values_number">%1$d</string>
+</resources>

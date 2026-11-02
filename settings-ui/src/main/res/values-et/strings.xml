@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d seade veel</item>
+        <item quantity="other">%1$d seadet veel</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopeeri link: %1$s</string>
+    <string name="common_back">Tagasi</string>
+    <string name="common_cancel">Loobu</string>
+    <string name="common_decrease_setting_desc">Vähenda %1$s</string>
+    <string name="common_disabled_open_setting">Ava seade</string>
+    <string name="common_increase_setting_desc">Suurenda %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Lähtesta %1$s vaikeväärtusele</string>
+    <string name="common_type_setting_value_desc">Sisesta väärtus %1$s jaoks</string>
+    <string name="common_value_range">Vahemikus %1$s kuni %2$s</string>
+    <string name="common_value_range_error">Sisestage arv vahemikus %1$s kuni %2$s</string>
+    <string name="favourites_add">Lisa lemmikutesse</string>
+    <string name="favourites_copy_link">Kopeeri link</string>
+    <string name="favourites_remove">Eemalda lemmikute hulgast</string>
+    <string name="home_hold_what_is_this">Mis see on?</string>
+    <string name="home_info_desc">Rohkem teavet %1$s kohta</string>
+    <string name="rows_reorder_handle_desc">Muuda %1$s järjestust</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Eemalda %1$s</string>
+    <string name="settings_depth_everything">Kõik</string>
+    <string name="settings_depth_everything_desc">Kõik seaded igal lehel</string>
+    <string name="settings_depth_simple">Lihtne</string>
+    <string name="settings_depth_simple_desc">Põhiline, nagu teistelgi klaviatuuridel</string>
+    <string name="settings_depth_standard">Standardne</string>
+    <string name="settings_depth_standard_desc">Põhialused ja tavalised lisad</string>
+    <string name="shell_breadcrumb_also_under">Ka jaotises %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Mine %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Tagasi algusesse</string>
+    <string name="values_number">%1$d</string>
+</resources>

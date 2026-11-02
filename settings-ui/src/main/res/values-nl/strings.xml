@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d extra instelling</item>
+        <item quantity="other">%1$d extra instellingen</item>
+    </plurals>
+    <string name="about_setting_link_desc">Link kopiëren naar %1$s</string>
+    <string name="common_back">Terug</string>
+    <string name="common_cancel">Annuleren</string>
+    <string name="common_decrease_setting_desc">%1$s verlagen</string>
+    <string name="common_disabled_open_setting">Open de instelling</string>
+    <string name="common_increase_setting_desc">Verhoog %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Reset %1$s naar de standaardinstelling</string>
+    <string name="common_type_setting_value_desc">Typ een waarde voor %1$s</string>
+    <string name="common_value_range">Van %1$s tot %2$s</string>
+    <string name="common_value_range_error">Voer een getal in van %1$s tot %2$s</string>
+    <string name="favourites_add">Toevoegen aan favorieten</string>
+    <string name="favourites_copy_link">Link kopiëren</string>
+    <string name="favourites_remove">Verwijderen uit favorieten</string>
+    <string name="home_hold_what_is_this">Wat is dit?</string>
+    <string name="home_info_desc">Meer over %1$s</string>
+    <string name="rows_reorder_handle_desc">Herschik %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Verwijder %1$s</string>
+    <string name="settings_depth_everything">Alles</string>
+    <string name="settings_depth_everything_desc">Elke instelling op elke pagina</string>
+    <string name="settings_depth_simple">Eenvoudig</string>
+    <string name="settings_depth_simple_desc">De basis, zoals andere toetsenborden</string>
+    <string name="settings_depth_standard">Standaard</string>
+    <string name="settings_depth_standard_desc">De basis en de gebruikelijke extra\'s</string>
+    <string name="shell_breadcrumb_also_under">Ook onder %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Ga naar %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Terug naar boven</string>
+    <string name="values_number">%1$d</string>
+</resources>

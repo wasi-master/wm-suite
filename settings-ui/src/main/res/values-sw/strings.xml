@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">Mipangilio %1$d zaidi</item>
+        <item quantity="other">Mipangilio %1$d zaidi</item>
+    </plurals>
+    <string name="about_setting_link_desc">Nakili kiungo cha %1$s</string>
+    <string name="common_back">Rudi</string>
+    <string name="common_cancel">Ghairi</string>
+    <string name="common_decrease_setting_desc">Punguza %1$s</string>
+    <string name="common_disabled_open_setting">Fungua mipangilio</string>
+    <string name="common_increase_setting_desc">Ongeza %1$s</string>
+    <string name="common_ok">Sawa</string>
+    <string name="common_reset_setting_desc">Weka upya %1$s kwenye hali yake ya awali</string>
+    <string name="common_type_setting_value_desc">Andika thamani ya %1$s</string>
+    <string name="common_value_range">Kutoka %1$s hadi %2$s</string>
+    <string name="common_value_range_error">Andika namba kuanzia %1$s hadi %2$s</string>
+    <string name="favourites_add">Ongeza kwenye vipendwa</string>
+    <string name="favourites_copy_link">Nakili kiungo</string>
+    <string name="favourites_remove">Ondoa kwenye vipendwa</string>
+    <string name="home_hold_what_is_this">Hiki ni nini?</string>
+    <string name="home_info_desc">Zaidi kuhusu %1$s</string>
+    <string name="rows_reorder_handle_desc">Panga upya %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Ondoa %1$s</string>
+    <string name="settings_depth_everything">Kila kitu</string>
+    <string name="settings_depth_everything_desc">Kila mpangilio kwenye kila ukurasa</string>
+    <string name="settings_depth_simple">Rahisi</string>
+    <string name="settings_depth_simple_desc">Misingi, kama kibodi zingine</string>
+    <string name="settings_depth_standard">Kawaida</string>
+    <string name="settings_depth_standard_desc">Misingi na nyongeza za kawaida</string>
+    <string name="shell_breadcrumb_also_under">Pia chini ya %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Nenda kwenye %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Rudi juu</string>
+    <string name="values_number">%1$d</string>
+</resources>

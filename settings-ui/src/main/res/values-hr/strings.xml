@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">Još %1$d postavka</item>
+        <item quantity="other">Još %1$d postavki</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopiraj poveznicu na %1$s</string>
+    <string name="common_back">Natrag</string>
+    <string name="common_cancel">Odustani</string>
+    <string name="common_decrease_setting_desc">Smanji %1$s</string>
+    <string name="common_disabled_open_setting">Otvori postavku</string>
+    <string name="common_increase_setting_desc">Povećaj %1$s</string>
+    <string name="common_ok">U redu</string>
+    <string name="common_reset_setting_desc">Vrati %1$s na zadano</string>
+    <string name="common_type_setting_value_desc">Upišite vrijednost za %1$s</string>
+    <string name="common_value_range">Od %1$s do %2$s</string>
+    <string name="common_value_range_error">Upišite broj od %1$s do %2$s</string>
+    <string name="favourites_add">Dodaj u favorite</string>
+    <string name="favourites_copy_link">Kopiraj poveznicu</string>
+    <string name="favourites_remove">Ukloni iz favorita</string>
+    <string name="home_hold_what_is_this">Što je ovo?</string>
+    <string name="home_info_desc">Više o %1$s</string>
+    <string name="rows_reorder_handle_desc">Promijeni redoslijed %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Ukloni %1$s</string>
+    <string name="settings_depth_everything">Sve</string>
+    <string name="settings_depth_everything_desc">Svaka postavka na svakoj stranici</string>
+    <string name="settings_depth_simple">Jednostavno</string>
+    <string name="settings_depth_simple_desc">Osnovne postavke, kao i kod drugih tipkovnica</string>
+    <string name="settings_depth_standard">Standardno</string>
+    <string name="settings_depth_standard_desc">Osnove i uobičajeni dodaci</string>
+    <string name="shell_breadcrumb_also_under">Također pod %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Idi na %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Natrag na vrh</string>
+    <string name="values_number">%1$d</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d innstilling til</item>
+        <item quantity="other">%1$d flere innstillinger</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopier lenke til %1$s</string>
+    <string name="common_back">Tilbake</string>
+    <string name="common_cancel">Avbryt</string>
+    <string name="common_decrease_setting_desc">Reduser %1$s</string>
+    <string name="common_disabled_open_setting">Åpne innstillingen</string>
+    <string name="common_increase_setting_desc">Øk %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Tilbakestill %1$s til standard</string>
+    <string name="common_type_setting_value_desc">Skriv inn en verdi for %1$s</string>
+    <string name="common_value_range">Fra %1$s til %2$s</string>
+    <string name="common_value_range_error">Skriv inn et tall fra %1$s til %2$s</string>
+    <string name="favourites_add">Legg til i favoritter</string>
+    <string name="favourites_copy_link">Kopier lenke</string>
+    <string name="favourites_remove">Fjern fra favoritter</string>
+    <string name="home_hold_what_is_this">Hva er dette?</string>
+    <string name="home_info_desc">Mer om %1$s</string>
+    <string name="rows_reorder_handle_desc">Omorganiser %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Fjern %1$s</string>
+    <string name="settings_depth_everything">Alt</string>
+    <string name="settings_depth_everything_desc">Hver innstilling på hver side</string>
+    <string name="settings_depth_simple">Enkel</string>
+    <string name="settings_depth_simple_desc">Det grunnleggende, som andre tastaturer</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">Det grunnleggende og de vanlige tilleggene</string>
+    <string name="shell_breadcrumb_also_under">Også under %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Gå til %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Tilbake til toppen</string>
+    <string name="values_number">%1$d</string>
+</resources>

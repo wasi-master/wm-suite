@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d مزید ترتیب</item>
+        <item quantity="other">%1$d مزید ترتیبات</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s کا لنک کاپی کریں</string>
+    <string name="common_back">واپس</string>
+    <string name="common_cancel">منسوخ کریں</string>
+    <string name="common_decrease_setting_desc">%1$s کو کم کریں</string>
+    <string name="common_disabled_open_setting">ترتیب کھولیں</string>
+    <string name="common_increase_setting_desc">%1$s میں اضافہ کریں</string>
+    <string name="common_ok">ٹھیک ہے</string>
+    <string name="common_reset_setting_desc">%1$s کو اس کی ڈیفالٹ حالت پر ری سیٹ کریں</string>
+    <string name="common_type_setting_value_desc">%1$s کے لیے ایک قدر ٹائپ کریں</string>
+    <string name="common_value_range">%1$s سے %2$s تک</string>
+    <string name="common_value_range_error">%1$s سے %2$s تک کوئی نمبر ٹائپ کریں</string>
+    <string name="favourites_add">پسندیدہ میں شامل کریں</string>
+    <string name="favourites_copy_link">لنک کاپی کریں</string>
+    <string name="favourites_remove">پسندیدہ سے ہٹائیں</string>
+    <string name="home_hold_what_is_this">یہ کیا ہے؟</string>
+    <string name="home_info_desc">%1$s کے بارے میں مزید</string>
+    <string name="rows_reorder_handle_desc">%1$s کو دوبارہ ترتیب دیں</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s کو ہٹائیں</string>
+    <string name="settings_depth_everything">سب کچھ</string>
+    <string name="settings_depth_everything_desc">ہر صفحے پر ہر ترتیب</string>
+    <string name="settings_depth_simple">آسان</string>
+    <string name="settings_depth_simple_desc">بنیادی باتیں، دوسرے کی بورڈز کی طرح</string>
+    <string name="settings_depth_standard">معیاری</string>
+    <string name="settings_depth_standard_desc">بنیادی باتیں اور عام اضافی سہولیات</string>
+    <string name="shell_breadcrumb_also_under">%1$s کے تحت بھی</string>
+    <string name="shell_breadcrumb_open_desc">%1$s پر جائیں</string>
+    <string name="shell_breadcrumb_top_desc">اوپر واپس جائیں</string>
+    <string name="values_number">%1$d</string>
+</resources>

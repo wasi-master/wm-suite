@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d વધુ સેટિંગ</item>
+        <item quantity="other">%1$d વધુ સેટિંગ્સ</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s ની લિંક કોપી કરો</string>
+    <string name="common_back">પાછા</string>
+    <string name="common_cancel">રદ કરો</string>
+    <string name="common_decrease_setting_desc">%1$s ઘટાડો</string>
+    <string name="common_disabled_open_setting">સેટિંગ ખોલો</string>
+    <string name="common_increase_setting_desc">%1$s વધારો</string>
+    <string name="common_ok">ઓકે</string>
+    <string name="common_reset_setting_desc">%1$s ને તેના ડિફોલ્ટ પર રીસેટ કરો</string>
+    <string name="common_type_setting_value_desc">%1$s માટે એક કિંમત ટાઇપ કરો</string>
+    <string name="common_value_range">%1$s થી %2$s સુધી</string>
+    <string name="common_value_range_error">%1$s થી %2$s સુધીની સંખ્યા ટાઈપ કરો</string>
+    <string name="favourites_add">મનપસંદમાં ઉમેરો</string>
+    <string name="favourites_copy_link">લિંક કોપી કરો</string>
+    <string name="favourites_remove">મનપસંદમાંથી દૂર કરો</string>
+    <string name="home_hold_what_is_this">આ શું છે?</string>
+    <string name="home_info_desc">%1$s વિશે વધુ</string>
+    <string name="rows_reorder_handle_desc">%1$s ને ફરીથી ગોઠવો</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s દૂર કરો</string>
+    <string name="settings_depth_everything">બધું જ</string>
+    <string name="settings_depth_everything_desc">દરેક પેજ પરની દરેક સેટિંગ</string>
+    <string name="settings_depth_simple">સરળ</string>
+    <string name="settings_depth_simple_desc">મૂળભૂત બાબતો, અન્ય કીબોર્ડ જેવી જ</string>
+    <string name="settings_depth_standard">સ્ટાન્ડર્ડ</string>
+    <string name="settings_depth_standard_desc">મૂળભૂત બાબતો અને સામાન્ય વધારાની વસ્તુઓ</string>
+    <string name="shell_breadcrumb_also_under">%1$s હેઠળ પણ</string>
+    <string name="shell_breadcrumb_open_desc">%1$s પર જાઓ</string>
+    <string name="shell_breadcrumb_top_desc">ટોચ પર પાછા જાઓ</string>
+    <string name="values_number">%1$d</string>
+</resources>

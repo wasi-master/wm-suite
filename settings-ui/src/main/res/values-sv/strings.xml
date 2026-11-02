@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d inställning till</item>
+        <item quantity="other">%1$d inställningar till</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopiera länk till %1$s</string>
+    <string name="common_back">Tillbaka</string>
+    <string name="common_cancel">Avbryt</string>
+    <string name="common_decrease_setting_desc">Minska %1$s</string>
+    <string name="common_disabled_open_setting">Öppna inställningen</string>
+    <string name="common_increase_setting_desc">Öka %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Återställ %1$s till standard</string>
+    <string name="common_type_setting_value_desc">Ange ett värde för %1$s</string>
+    <string name="common_value_range">Från %1$s till %2$s</string>
+    <string name="common_value_range_error">Ange ett nummer från %1$s till %2$s</string>
+    <string name="favourites_add">Lägg till i favoriter</string>
+    <string name="favourites_copy_link">Kopiera länk</string>
+    <string name="favourites_remove">Ta bort från favoriter</string>
+    <string name="home_hold_what_is_this">Vad är detta?</string>
+    <string name="home_info_desc">Mer om %1$s</string>
+    <string name="rows_reorder_handle_desc">Ändra ordning på %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Ta bort %1$s</string>
+    <string name="settings_depth_everything">Allt</string>
+    <string name="settings_depth_everything_desc">Varje inställning på varje sida</string>
+    <string name="settings_depth_simple">Enkel</string>
+    <string name="settings_depth_simple_desc">Grunderna, som andra tangentbord</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">Grunderna och de vanliga extrafunktionerna</string>
+    <string name="shell_breadcrumb_also_under">Även under %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Gå till %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Tillbaka till toppen</string>
+    <string name="values_number">%1$d</string>
+</resources>

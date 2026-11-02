@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d weitere Einstellung</item>
+        <item quantity="other">%1$d weitere Einstellungen</item>
+    </plurals>
+    <string name="about_setting_link_desc">Link zu %1$s kopieren</string>
+    <string name="common_back">Zurück</string>
+    <string name="common_cancel">Abbrechen</string>
+    <string name="common_decrease_setting_desc">%1$s verringern</string>
+    <string name="common_disabled_open_setting">Einstellung öffnen</string>
+    <string name="common_increase_setting_desc">%1$s erhöhen</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">%1$s auf Standard zurücksetzen</string>
+    <string name="common_type_setting_value_desc">Einen Wert für %1$s eingeben</string>
+    <string name="common_value_range">Von %1$s bis %2$s</string>
+    <string name="common_value_range_error">Geben Sie eine Zahl von %1$s bis %2$s ein</string>
+    <string name="favourites_add">Zu Favoriten hinzufügen</string>
+    <string name="favourites_copy_link">Link kopieren</string>
+    <string name="favourites_remove">Aus Favoriten entfernen</string>
+    <string name="home_hold_what_is_this">Was ist das?</string>
+    <string name="home_info_desc">Mehr über %1$s</string>
+    <string name="rows_reorder_handle_desc">%1$s neu anordnen</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s entfernen</string>
+    <string name="settings_depth_everything">Alles</string>
+    <string name="settings_depth_everything_desc">Jede Einstellung auf jeder Seite</string>
+    <string name="settings_depth_simple">Einfach</string>
+    <string name="settings_depth_simple_desc">Die Grundlagen, wie bei anderen Tastaturen</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">Die Grundlagen und die gängigen Extras</string>
+    <string name="shell_breadcrumb_also_under">Auch unter %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Zu %1$s gehen</string>
+    <string name="shell_breadcrumb_top_desc">Zurück nach oben</string>
+    <string name="values_number">%1$d</string>
+</resources>

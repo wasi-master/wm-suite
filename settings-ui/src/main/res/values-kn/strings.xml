@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">ಇನ್ನೊಂದು %1$d ಸೆಟ್ಟಿಂಗ್</item>
+        <item quantity="other">ಇನ್ನಷ್ಟು %1$d ಸೆಟ್ಟಿಂಗ್‌ಗಳು</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s ಗೆ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಿ</string>
+    <string name="common_back">ಹಿಂದಕ್ಕೆ</string>
+    <string name="common_cancel">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="common_decrease_setting_desc">%1$s ಅನ್ನು ಕಡಿಮೆ ಮಾಡಿ</string>
+    <string name="common_disabled_open_setting">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
+    <string name="common_increase_setting_desc">%1$s ಹೆಚ್ಚಿಸಿ</string>
+    <string name="common_ok">ಸರಿ</string>
+    <string name="common_reset_setting_desc">%1$s ಅನ್ನು ಅದರ ಡೀಫಾಲ್ಟ್‌ಗೆ ಮರುಹೊಂದಿಸಿ</string>
+    <string name="common_type_setting_value_desc">%1$s ಗಾಗಿ ಒಂದು ಮೌಲ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ</string>
+    <string name="common_value_range">%1$s ನಿಂದ %2$s ವರೆಗೆ</string>
+    <string name="common_value_range_error">%1$s ರಿಂದ %2$s ವರೆಗಿನ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="favourites_add">ಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸಿ</string>
+    <string name="favourites_copy_link">ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಿ</string>
+    <string name="favourites_remove">ಮೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದುಹಾಕಿ</string>
+    <string name="home_hold_what_is_this">ಇದು ಏನು?</string>
+    <string name="home_info_desc">%1$s ಬಗ್ಗೆ ಇನ್ನಷ್ಟು</string>
+    <string name="rows_reorder_handle_desc">%1$s ಅನ್ನು ಮರುಕ್ರಮಗೊಳಿಸಿ</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s ಅನ್ನು ತೆಗೆದುಹಾಕಿ</string>
+    <string name="settings_depth_everything">ಎಲ್ಲವೂ</string>
+    <string name="settings_depth_everything_desc">ಪ್ರತಿ ಪುಟದಲ್ಲಿನ ಪ್ರತಿಯೊಂದು ಸೆಟ್ಟಿಂಗ್</string>
+    <string name="settings_depth_simple">ಸರಳ</string>
+    <string name="settings_depth_simple_desc">ಇತರ ಕೀಬೋರ್ಡ್‌ಗಳಂತೆಯೇ ಮೂಲಭೂತ ಅಂಶಗಳು</string>
+    <string name="settings_depth_standard">ಪ್ರಮಾಣಿತ</string>
+    <string name="settings_depth_standard_desc">ಮೂಲಭೂತ ಅಂಶಗಳು ಮತ್ತು ಸಾಮಾನ್ಯ ಹೆಚ್ಚುವರಿಗಳು</string>
+    <string name="shell_breadcrumb_also_under">ಇದರ ಅಡಿಯಲ್ಲಿಯೂ ಇದೆ %1$s</string>
+    <string name="shell_breadcrumb_open_desc">%1$s ಗೆ ಹೋಗಿ</string>
+    <string name="shell_breadcrumb_top_desc">ಮೇಲಕ್ಕೆ ಹಿಂತಿರುಗಿ</string>
+    <string name="values_number">%1$d</string>
+</resources>

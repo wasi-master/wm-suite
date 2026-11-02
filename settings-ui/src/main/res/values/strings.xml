@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d more setting</item>
+        <item quantity="other">%1$d more settings</item>
+    </plurals>
+    <string name="about_setting_link_desc">Copy link to <xliff:g id="setting" example="Autocorrect">%1$s</xliff:g></string>
+    <string name="common_back">Back</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_decrease_setting_desc">Decrease %1$s</string>
+    <string name="common_disabled_open_setting">Open the setting</string>
+    <string name="common_increase_setting_desc">Increase %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Reset %1$s to its default</string>
+    <string name="common_type_setting_value_desc">Type a value for %1$s</string>
+    <string name="common_value_range">From %1$s to %2$s</string>
+    <string name="common_value_range_error">Type a number from %1$s to %2$s</string>
+    <string name="favourites_add">Add to favourites</string>
+    <string name="favourites_copy_link">Copy link</string>
+    <string name="favourites_remove">Remove from favourites</string>
+    <string name="home_hold_what_is_this">What is this?</string>
+    <string name="home_info_desc">More about %1$s</string>
+    <string name="rows_reorder_handle_desc">Reorder %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Remove %1$s</string>
+    <string name="settings_depth_everything">Everything</string>
+    <string name="settings_depth_everything_desc">Every setting on every page</string>
+    <string name="settings_depth_reveal_dismiss">Got it</string>
+    <string name="settings_depth_reveal_keep">Always show %1$s</string>
+    <string name="settings_depth_reveal_page_body">You are on %1$s, which leaves some of these out. You can see them because you came straight here, and they hide again once you leave. You can change this any time under About › App.</string>
+    <string name="settings_depth_reveal_page_title">This page is showing extra settings</string>
+    <string name="settings_depth_reveal_row_body">It belongs to the %1$s settings, and you are on %2$s. You can see it because you came straight here, and it hides again once you leave. You can change this any time under About › App.</string>
+    <string name="settings_depth_reveal_row_title">This setting is normally hidden</string>
+    <string name="settings_depth_simple">Simple</string>
+    <string name="settings_depth_simple_desc">The basics, like other keyboards</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">The basics and the common extras</string>
+    <string name="shell_breadcrumb_also_under">Also under <xliff:g id="path" example="Home › Emoji">%1$s</xliff:g></string>
+    <string name="shell_breadcrumb_open_desc">Go to <xliff:g id="screen" example="Appearance">%1$s</xliff:g></string>
+    <string name="shell_breadcrumb_top_desc">Back to the top</string>
+    <string name="values_number">%1$d</string>
+</resources>

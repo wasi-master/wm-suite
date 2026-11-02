@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d setare în plus</item>
+        <item quantity="other">%1$d setări în plus</item>
+    </plurals>
+    <string name="about_setting_link_desc">Copiază linkul către %1$s</string>
+    <string name="common_back">Înapoi</string>
+    <string name="common_cancel">Anulare</string>
+    <string name="common_decrease_setting_desc">Micșorează %1$s</string>
+    <string name="common_disabled_open_setting">Deschide setarea</string>
+    <string name="common_increase_setting_desc">Crește %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Resetează %1$s la valoarea implicită</string>
+    <string name="common_type_setting_value_desc">Introduceți o valoare pentru %1$s</string>
+    <string name="common_value_range">De la %1$s la %2$s</string>
+    <string name="common_value_range_error">Introdu un număr de la %1$s la %2$s</string>
+    <string name="favourites_add">Adaugă la favorite</string>
+    <string name="favourites_copy_link">Copiază linkul</string>
+    <string name="favourites_remove">Elimină din favorite</string>
+    <string name="home_hold_what_is_this">Ce este acesta?</string>
+    <string name="home_info_desc">Mai multe despre %1$s</string>
+    <string name="rows_reorder_handle_desc">Reordonați %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Elimină %1$s</string>
+    <string name="settings_depth_everything">Totul</string>
+    <string name="settings_depth_everything_desc">Fiecare setare de pe fiecare pagină</string>
+    <string name="settings_depth_simple">Simplu</string>
+    <string name="settings_depth_simple_desc">Elementele de bază, ca la alte tastaturi</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">Elementele de bază și extra-urile comune</string>
+    <string name="shell_breadcrumb_also_under">De asemenea, sub %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Mergi la %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Înapoi la început</string>
+    <string name="values_number">%1$d</string>
+</resources>

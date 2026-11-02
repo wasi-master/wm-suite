@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d configuração adicional</item>
+        <item quantity="other">%1$d configurações adicionais</item>
+    </plurals>
+    <string name="about_setting_link_desc">Copiar link para %1$s</string>
+    <string name="common_back">Voltar</string>
+    <string name="common_cancel">Cancelar</string>
+    <string name="common_decrease_setting_desc">Diminuir %1$s</string>
+    <string name="common_disabled_open_setting">Abrir a configuração</string>
+    <string name="common_increase_setting_desc">Aumentar %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Redefinir %1$s para o padrão</string>
+    <string name="common_type_setting_value_desc">Digite um valor para %1$s</string>
+    <string name="common_value_range">De %1$s a %2$s</string>
+    <string name="common_value_range_error">Digite um número de %1$s a %2$s</string>
+    <string name="favourites_add">Adicionar aos favoritos</string>
+    <string name="favourites_copy_link">Copiar link</string>
+    <string name="favourites_remove">Remover dos favoritos</string>
+    <string name="home_hold_what_is_this">O que é isto?</string>
+    <string name="home_info_desc">Mais sobre %1$s</string>
+    <string name="rows_reorder_handle_desc">Reordenar %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Remover %1$s</string>
+    <string name="settings_depth_everything">Tudo</string>
+    <string name="settings_depth_everything_desc">Todas as configurações em todas as páginas</string>
+    <string name="settings_depth_simple">Simples</string>
+    <string name="settings_depth_simple_desc">O básico, como outros teclados</string>
+    <string name="settings_depth_standard">Padrão</string>
+    <string name="settings_depth_standard_desc">O básico e os extras comuns</string>
+    <string name="shell_breadcrumb_also_under">Também em %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Ir para %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Voltar ao topo</string>
+    <string name="values_number">%1$d</string>
+</resources>

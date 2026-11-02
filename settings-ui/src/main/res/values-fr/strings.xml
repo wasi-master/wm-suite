@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d paramètre supplémentaire</item>
+        <item quantity="other">%1$d paramètres supplémentaires</item>
+    </plurals>
+    <string name="about_setting_link_desc">Copier le lien vers %1$s</string>
+    <string name="common_back">Retour</string>
+    <string name="common_cancel">Annuler</string>
+    <string name="common_decrease_setting_desc">Diminuer %1$s</string>
+    <string name="common_disabled_open_setting">Ouvrir le paramètre</string>
+    <string name="common_increase_setting_desc">Augmenter %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Réinitialiser %1$s à sa valeur par défaut</string>
+    <string name="common_type_setting_value_desc">Saisissez une valeur pour %1$s</string>
+    <string name="common_value_range">De %1$s à %2$s</string>
+    <string name="common_value_range_error">Saisissez un nombre entre %1$s et %2$s</string>
+    <string name="favourites_add">Ajouter aux favoris</string>
+    <string name="favourites_copy_link">Copier le lien</string>
+    <string name="favourites_remove">Supprimer des favoris</string>
+    <string name="home_hold_what_is_this">Qu\'est-ce que c\'est ?</string>
+    <string name="home_info_desc">En savoir plus sur %1$s</string>
+    <string name="rows_reorder_handle_desc">Réorganiser %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Supprimer %1$s</string>
+    <string name="settings_depth_everything">Tout</string>
+    <string name="settings_depth_everything_desc">Chaque paramètre sur chaque page</string>
+    <string name="settings_depth_simple">Simple</string>
+    <string name="settings_depth_simple_desc">Les bases, comme les autres claviers</string>
+    <string name="settings_depth_standard">Standard</string>
+    <string name="settings_depth_standard_desc">Les bases et les extras courants</string>
+    <string name="shell_breadcrumb_also_under">Également sous %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Aller à %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Retour en haut</string>
+    <string name="values_number">%1$d</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d configuració més</item>
+        <item quantity="other">%1$d configuracions més</item>
+    </plurals>
+    <string name="about_setting_link_desc">Copia l\'enllaç a %1$s</string>
+    <string name="common_back">Enrere</string>
+    <string name="common_cancel">Cancel·la</string>
+    <string name="common_decrease_setting_desc">Disminuir %1$s</string>
+    <string name="common_disabled_open_setting">Obre la configuració</string>
+    <string name="common_increase_setting_desc">Augmenta %1$s</string>
+    <string name="common_ok">D\'acord</string>
+    <string name="common_reset_setting_desc">Restableix %1$s als valors predeterminats</string>
+    <string name="common_type_setting_value_desc">Escriviu un valor per a %1$s</string>
+    <string name="common_value_range">De %1$s a %2$s</string>
+    <string name="common_value_range_error">Escriu un número del %1$s al %2$s</string>
+    <string name="favourites_add">Afegeix als preferits</string>
+    <string name="favourites_copy_link">Copia l\'enllaç</string>
+    <string name="favourites_remove">Elimina dels preferits</string>
+    <string name="home_hold_what_is_this">Què és això?</string>
+    <string name="home_info_desc">Més sobre %1$s</string>
+    <string name="rows_reorder_handle_desc">Reordena %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Elimina %1$s</string>
+    <string name="settings_depth_everything">Tot</string>
+    <string name="settings_depth_everything_desc">Tots els paràmetres de totes les pàgines</string>
+    <string name="settings_depth_simple">Simple</string>
+    <string name="settings_depth_simple_desc">Els conceptes bàsics, com altres teclats</string>
+    <string name="settings_depth_standard">Estàndard</string>
+    <string name="settings_depth_standard_desc">Els bàsics i els extres comuns</string>
+    <string name="shell_breadcrumb_also_under">També a %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Vés a %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Torna a dalt</string>
+    <string name="values_number">%1$d</string>
+</resources>

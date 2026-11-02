@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">आणखी %1$d सेटिंग</item>
+        <item quantity="other">आणखी %1$d सेटिंग्ज</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s ची लिंक कॉपी करा</string>
+    <string name="common_back">मागे</string>
+    <string name="common_cancel">रद्द करा</string>
+    <string name="common_decrease_setting_desc">%1$s कमी करा</string>
+    <string name="common_disabled_open_setting">सेटिंग उघडा</string>
+    <string name="common_increase_setting_desc">%1$s वाढवा</string>
+    <string name="common_ok">ठीक आहे</string>
+    <string name="common_reset_setting_desc">%1$s ला त्याच्या डीफॉल्टवर रीसेट करा</string>
+    <string name="common_type_setting_value_desc">%1$s साठी एक मूल्य टाइप करा</string>
+    <string name="common_value_range">%1$s पासून %2$s पर्यंत</string>
+    <string name="common_value_range_error">%1$s ते %2$s मधील एक नंबर टाइप करा</string>
+    <string name="favourites_add">आवडत्यामध्ये जोडा</string>
+    <string name="favourites_copy_link">लिंक कॉपी करा</string>
+    <string name="favourites_remove">आवडत्यांमधून काढून टाका</string>
+    <string name="home_hold_what_is_this">हे काय आहे?</string>
+    <string name="home_info_desc">%1$s बद्दल अधिक</string>
+    <string name="rows_reorder_handle_desc">%1$s पुन्हा क्रमाने लावा</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s काढा</string>
+    <string name="settings_depth_everything">सर्व काही</string>
+    <string name="settings_depth_everything_desc">प्रत्येक पृष्ठावरील प्रत्येक सेटिंग</string>
+    <string name="settings_depth_simple">साधे</string>
+    <string name="settings_depth_simple_desc">इतर कीबोर्डप्रमाणेच मूलभूत गोष्टी</string>
+    <string name="settings_depth_standard">मानक</string>
+    <string name="settings_depth_standard_desc">मूलभूत गोष्टी आणि सामान्य अतिरिक्त गोष्टी</string>
+    <string name="shell_breadcrumb_also_under">%1$s अंतर्गत देखील</string>
+    <string name="shell_breadcrumb_open_desc">%1$s वर जा</string>
+    <string name="shell_breadcrumb_top_desc">वर परत जा</string>
+    <string name="values_number">%1$d</string>
+</resources>

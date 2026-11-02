@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">మరొక %1$d సెట్టింగ్</item>
+        <item quantity="other">మరిన్ని %1$d సెట్టింగ్‌లు</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$sకి లింక్‌ను కాపీ చేయండి</string>
+    <string name="common_back">వెనుకకు</string>
+    <string name="common_cancel">రద్దు చేయి</string>
+    <string name="common_decrease_setting_desc">%1$s తగ్గించండి</string>
+    <string name="common_disabled_open_setting">సెట్టింగ్‌ను తెరవండి</string>
+    <string name="common_increase_setting_desc">%1$sని పెంచు</string>
+    <string name="common_ok">సరే</string>
+    <string name="common_reset_setting_desc">%1$sని దాని డిఫాల్ట్‌కు రీసెట్ చేయండి</string>
+    <string name="common_type_setting_value_desc">%1$s కోసం ఒక విలువను టైప్ చేయండి</string>
+    <string name="common_value_range">%1$s నుండి %2$s వరకు</string>
+    <string name="common_value_range_error">%1$s నుండి %2$s మధ్యలో ఉన్న సంఖ్యను టైప్ చేయండి</string>
+    <string name="favourites_add">ఇష్టమైన వాటికి జోడించు</string>
+    <string name="favourites_copy_link">లింక్‌ని కాపీ చేయండి</string>
+    <string name="favourites_remove">ఇష్టమైన వాటి నుండి తీసివేయి</string>
+    <string name="home_hold_what_is_this">ఇది ఏమిటి?</string>
+    <string name="home_info_desc">%1$s గురించి మరిన్ని</string>
+    <string name="rows_reorder_handle_desc">%1$sని తిరిగి అమర్చండి</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$sని తొలగించు</string>
+    <string name="settings_depth_everything">అన్నీ</string>
+    <string name="settings_depth_everything_desc">ప్రతి పేజీలోని ప్రతి సెట్టింగ్</string>
+    <string name="settings_depth_simple">సాధారణ</string>
+    <string name="settings_depth_simple_desc">ఇతర కీబోర్డుల వలె, ప్రాథమిక అంశాలు</string>
+    <string name="settings_depth_standard">ప్రామాణిక</string>
+    <string name="settings_depth_standard_desc">ప్రాథమిక అంశాలు మరియు సాధారణ అదనపు ఫీచర్లు</string>
+    <string name="shell_breadcrumb_also_under">%1$s కింద కూడా</string>
+    <string name="shell_breadcrumb_open_desc">%1$s కి వెళ్ళండి</string>
+    <string name="shell_breadcrumb_top_desc">పైకి తిరిగి వెళ్ళు</string>
+    <string name="values_number">%1$d</string>
+</resources>

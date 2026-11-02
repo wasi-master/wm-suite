@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">আরও %1$dটি সেটিংস</item>
+        <item quantity="other">আরও %1$dটি সেটিংস</item>
+    </plurals>
+    <string name="about_setting_link_desc">%1$s এর লিঙ্ক কপি করুন</string>
+    <string name="common_back">ফিরে যান</string>
+    <string name="common_cancel">বাতিল</string>
+    <string name="common_decrease_setting_desc">%1$s কমান</string>
+    <string name="common_disabled_open_setting">সেটিং খুলুন</string>
+    <string name="common_increase_setting_desc">%1$s বৃদ্ধি করুন</string>
+    <string name="common_ok">ঠিক আছে</string>
+    <string name="common_reset_setting_desc">%1$s-কে ডিফল্ট অবস্থায় রিসেট করুন</string>
+    <string name="common_type_setting_value_desc">%1$s-এর জন্য একটি মান টাইপ করুন</string>
+    <string name="common_value_range">%1$s থেকে %2$s পর্যন্ত</string>
+    <string name="common_value_range_error">%1$s থেকে %2$s এর মধ্যে একটি সংখ্যা টাইপ করুন</string>
+    <string name="favourites_add">পছন্দ তালিকায় যোগ করুন</string>
+    <string name="favourites_copy_link">লিঙ্ক কপি করুন</string>
+    <string name="favourites_remove">পছন্দসই থেকে সরান</string>
+    <string name="home_hold_what_is_this">এটি কী?</string>
+    <string name="home_info_desc">%1$s সম্পর্কে আরও জানুন</string>
+    <string name="rows_reorder_handle_desc">%1$s পুনরায় সাজান</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">%1$s সরান</string>
+    <string name="settings_depth_everything">সবকিছু</string>
+    <string name="settings_depth_everything_desc">প্রতিটি পৃষ্ঠার প্রতিটি সেটিং</string>
+    <string name="settings_depth_simple">সহজ</string>
+    <string name="settings_depth_simple_desc">মৌলিক বিষয়গুলো, অন্যান্য কিবোর্ডের মতো</string>
+    <string name="settings_depth_standard">স্ট্যান্ডার্ড</string>
+    <string name="settings_depth_standard_desc">মৌলিক বিষয়গুলো এবং সাধারণ অতিরিক্ত ফিচার</string>
+    <string name="shell_breadcrumb_also_under">%1$s-এর অধীনেও</string>
+    <string name="shell_breadcrumb_open_desc">%1$s-এ যান</string>
+    <string name="shell_breadcrumb_top_desc">উপরে ফিরে যান</string>
+    <string name="values_number">%1$d</string>
+</resources>

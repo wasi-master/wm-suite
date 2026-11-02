@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d vēl viens iestatījums</item>
+        <item quantity="other">%1$d vēl iestatījumi</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopēt saiti uz %1$s</string>
+    <string name="common_back">Atpakaļ</string>
+    <string name="common_cancel">Atcelt</string>
+    <string name="common_decrease_setting_desc">Samazināt %1$s</string>
+    <string name="common_disabled_open_setting">Atvērt iestatījumu</string>
+    <string name="common_increase_setting_desc">Palielināt %1$s</string>
+    <string name="common_ok">Labi</string>
+    <string name="common_reset_setting_desc">Atiestatīt %1$s uz noklusējuma vērtību</string>
+    <string name="common_type_setting_value_desc">Ievadiet vērtību %1$s</string>
+    <string name="common_value_range">No %1$s līdz %2$s</string>
+    <string name="common_value_range_error">Ievadiet skaitli no %1$s līdz %2$s</string>
+    <string name="favourites_add">Pievienot izlasei</string>
+    <string name="favourites_copy_link">Kopēt saiti</string>
+    <string name="favourites_remove">Izņemt no izlases</string>
+    <string name="home_hold_what_is_this">Kas tas ir?</string>
+    <string name="home_info_desc">Vairāk par %1$s</string>
+    <string name="rows_reorder_handle_desc">Pārkārtot %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Noņemt %1$s</string>
+    <string name="settings_depth_everything">Viss</string>
+    <string name="settings_depth_everything_desc">Katrs iestatījums katrā lapā</string>
+    <string name="settings_depth_simple">Vienkāršs</string>
+    <string name="settings_depth_simple_desc">Pamati, tāpat kā citās tastatūrās</string>
+    <string name="settings_depth_standard">Standarta</string>
+    <string name="settings_depth_standard_desc">Pamati un izplatītākie papildinājumi</string>
+    <string name="shell_breadcrumb_also_under">Arī sadaļā %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Doties uz %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Atpakaļ uz augšu</string>
+    <string name="values_number">%1$d</string>
+</resources>

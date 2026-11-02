@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d asetus lisää</item>
+        <item quantity="other">%1$d asetusta lisää</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopioi linkki kohteeseen %1$s</string>
+    <string name="common_back">Takaisin</string>
+    <string name="common_cancel">Peruuta</string>
+    <string name="common_decrease_setting_desc">Pienennä %1$s</string>
+    <string name="common_disabled_open_setting">Avaa asetus</string>
+    <string name="common_increase_setting_desc">Lisää %1$s</string>
+    <string name="common_ok">OK</string>
+    <string name="common_reset_setting_desc">Palauta %1$s oletusasetuksiin</string>
+    <string name="common_type_setting_value_desc">Kirjoita arvo kohteelle %1$s</string>
+    <string name="common_value_range">%1$s – %2$s</string>
+    <string name="common_value_range_error">Kirjoita numero väliltä %1$s – %2$s</string>
+    <string name="favourites_add">Lisää suosikkeihin</string>
+    <string name="favourites_copy_link">Kopioi linkki</string>
+    <string name="favourites_remove">Poista suosikeista</string>
+    <string name="home_hold_what_is_this">Mikä tämä on?</string>
+    <string name="home_info_desc">Lisätietoja kohteesta %1$s</string>
+    <string name="rows_reorder_handle_desc">Järjestä uudelleen %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Poista %1$s</string>
+    <string name="settings_depth_everything">Kaikki</string>
+    <string name="settings_depth_everything_desc">Jokainen asetus jokaisella sivulla</string>
+    <string name="settings_depth_simple">Yksinkertainen</string>
+    <string name="settings_depth_simple_desc">Perusasetukset, kuten muissakin näppäimistöissä</string>
+    <string name="settings_depth_standard">Standardi</string>
+    <string name="settings_depth_standard_desc">Perusasiat ja yleiset lisäominaisuudet</string>
+    <string name="shell_breadcrumb_also_under">Myös kohdassa %1$s</string>
+    <string name="shell_breadcrumb_open_desc">Siirry kohteeseen %1$s</string>
+    <string name="shell_breadcrumb_top_desc">Takaisin alkuun</string>
+    <string name="values_number">%1$d</string>
+</resources>

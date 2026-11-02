@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d isilungiselelo esengeziwe</item>
+        <item quantity="other">%1$d izilungiselelo ezengeziwe</item>
+    </plurals>
+    <string name="about_setting_link_desc">Kopisha isixhumanisi ku-%1$s</string>
+    <string name="common_back">Emuva</string>
+    <string name="common_cancel">Khansela</string>
+    <string name="common_decrease_setting_desc">Yehlisa u-%1$s</string>
+    <string name="common_disabled_open_setting">Vula izilungiselelo</string>
+    <string name="common_increase_setting_desc">Khulisa %1$s</string>
+    <string name="common_ok">Kulungile</string>
+    <string name="common_reset_setting_desc">Setha kabusha %1$s ibuyele kokuzenzakalelayo</string>
+    <string name="common_type_setting_value_desc">Thayipha inani le-%1$s</string>
+    <string name="common_value_range">Kusuka ku-%1$s kuya ku-%2$s</string>
+    <string name="common_value_range_error">Thayipha inombolo kusuka ku-%1$s kuya ku-%2$s</string>
+    <string name="favourites_add">Engeza ezintandokazini</string>
+    <string name="favourites_copy_link">Kopisha isixhumanisi</string>
+    <string name="favourites_remove">Susa kokuthandwayo</string>
+    <string name="home_hold_what_is_this">Yini le?</string>
+    <string name="home_info_desc">Okuningi mayelana ne-%1$s</string>
+    <string name="rows_reorder_handle_desc">Hlela kabusha u-%1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">Susa %1$s</string>
+    <string name="settings_depth_everything">Konke</string>
+    <string name="settings_depth_everything_desc">Zonke izilungiselelo ekhasini ngalinye</string>
+    <string name="settings_depth_simple">Okulula</string>
+    <string name="settings_depth_simple_desc">Okuyisisekelo, njengamanye amakhibhodi</string>
+    <string name="settings_depth_standard">Okujwayelekile</string>
+    <string name="settings_depth_standard_desc">Okuyisisekelo kanye nezinto ezengeziwe ezivamile</string>
+    <string name="shell_breadcrumb_also_under">Futhi ngaphansi kwe-%1$s</string>
+    <string name="shell_breadcrumb_open_desc">Iya ku-%1$s</string>
+    <string name="shell_breadcrumb_top_desc">Buyela phezulu</string>
+    <string name="values_number">%1$d</string>
+</resources>

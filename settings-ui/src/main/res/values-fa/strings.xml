@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="settings_depth_more_rows">
+        <item quantity="one">%1$d تنظیم بیشتر</item>
+        <item quantity="other">%1$d تنظیم بیشتر</item>
+    </plurals>
+    <string name="about_setting_link_desc">کپی کردن پیوند به %1$s</string>
+    <string name="common_back">بازگشت</string>
+    <string name="common_cancel">لغو</string>
+    <string name="common_decrease_setting_desc">کاهش %1$s</string>
+    <string name="common_disabled_open_setting">باز کردن تنظیمات</string>
+    <string name="common_increase_setting_desc">افزایش %1$s</string>
+    <string name="common_ok">تأیید</string>
+    <string name="common_reset_setting_desc">بازنشانی %1$s به حالت پیش‌فرض</string>
+    <string name="common_type_setting_value_desc">مقداری برای %1$s تایپ کنید</string>
+    <string name="common_value_range">از %1$s تا %2$s</string>
+    <string name="common_value_range_error">عددی بین %1$s تا %2$s وارد کنید</string>
+    <string name="favourites_add">افزودن به علاقه‌مندی‌ها</string>
+    <string name="favourites_copy_link">کپی لینک</string>
+    <string name="favourites_remove">حذف از علاقه‌مندی‌ها</string>
+    <string name="home_hold_what_is_this">این چیست؟</string>
+    <string name="home_info_desc">اطلاعات بیشتر درباره %1$s</string>
+    <string name="rows_reorder_handle_desc">مرتب‌سازی مجدد %1$s</string>
+    <string name="rows_reorder_position_label">%1$d.</string>
+    <string name="rows_reorder_remove_desc">حذف %1$s</string>
+    <string name="settings_depth_everything">همه چیز</string>
+    <string name="settings_depth_everything_desc">همه تنظیمات در هر صفحه</string>
+    <string name="settings_depth_simple">ساده</string>
+    <string name="settings_depth_simple_desc">اصول اولیه، مانند سایر صفحه‌کلیدها</string>
+    <string name="settings_depth_standard">استاندارد</string>
+    <string name="settings_depth_standard_desc">موارد پایه و موارد اضافی رایج</string>
+    <string name="shell_breadcrumb_also_under">همچنین در %1$s</string>
+    <string name="shell_breadcrumb_open_desc">رفتن به %1$s</string>
+    <string name="shell_breadcrumb_top_desc">بازگشت به بالا</string>
+    <string name="values_number">%1$d</string>
+</resources>
