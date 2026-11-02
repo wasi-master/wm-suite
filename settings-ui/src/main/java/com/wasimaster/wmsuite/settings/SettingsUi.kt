@@ -111,6 +111,7 @@ import androidx.compose.animation.core.animate
 import androidx.compose.runtime.rememberCoroutineScope
 import kotlinx.coroutines.launch
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.graphics.TransformOrigin
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -237,7 +238,8 @@ public fun WmIconTile(
         }
         return
     }
-    val dark = isSystemInDarkTheme()
+    // Asks the theme rather than the system, because an app can choose its own dark mode.
+    val dark = MaterialTheme.colorScheme.surface.luminance() < 0.5f
     val wash = if (dark) 0.24f else 0.15f
     Box(
         modifier = modifier
