@@ -190,13 +190,22 @@ object AutoBackupNaming {
      */
     fun isListed(displayName: String): Boolean =
         isOurs(displayName) || isOurs(displayName, frequent = true) ||
-            com.wasimaster.wmkeyboard.core.settings.sync.SyncNaming.isOurs(displayName)
+            com.wasimaster.wmkeyboard.core.settings.sync.SyncNaming.isOurs(displayName) ||
+            appFiles(displayName)
+
+    /**
+     * Files another app in the suite keeps through these sinks. Each app names its own,
+     * so a listing never hands one app another's files or anything else in the folder.
+     */
+    @Volatile
+    var appFiles: (String) -> Boolean = { false }
 
     /** Whether [displayName] is one of our half-written files, backup or sync, ours to sweep. */
     fun isPart(displayName: String): Boolean =
         (displayName.startsWith(PREFIX) || displayName.startsWith(FREQUENT_PREFIX) ||
             displayName.startsWith(com.wasimaster.wmkeyboard.core.settings.sync.SyncNaming.PREFIX) ||
-            displayName.startsWith(com.wasimaster.wmkeyboard.core.settings.sync.SyncNaming.GROUP_PREFIX)) &&
+            displayName.startsWith(com.wasimaster.wmkeyboard.core.settings.sync.SyncNaming.GROUP_PREFIX) ||
+            appFiles(displayName.removeSuffix(PART_SUFFIX).removeSuffix(UPLOAD_SUFFIX))) &&
             (displayName.endsWith(PART_SUFFIX) || displayName.endsWith(UPLOAD_SUFFIX))
 
     /**
