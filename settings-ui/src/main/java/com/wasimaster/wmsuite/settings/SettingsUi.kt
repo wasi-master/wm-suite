@@ -177,6 +177,14 @@ private fun tileGlyphColor(accent: Color, dark: Boolean): Color =
     if (dark) accent else androidx.compose.ui.graphics.lerp(accent, Color.Black, 0.28f)
 
 /**
+ * Asks settings screens for plain rows: no card behind a group and a bare glyph
+ * instead of a tinted tile, as a stock Android settings list draws them. An app
+ * sets this once, around everything, so its settings match the rest of its pages.
+ */
+public val LocalWmPlainGroups: androidx.compose.runtime.ProvidableCompositionLocal<Boolean> =
+    androidx.compose.runtime.staticCompositionLocalOf { false }
+
+/**
  * A rounded, tinted tile behind a settings icon. The single most recognisable
  * piece of the app's chrome — a bare tinted glyph is what every stock Material
  * settings list looks like.
@@ -216,6 +224,16 @@ public fun WmIconTile(
     radius: Dp = IconTileRadius,
     content: @Composable () -> Unit,
 ) {
+    if (LocalWmPlainGroups.current) {
+        // The lane stays as wide as a tile, so labels line up on the usual 72 dp inset.
+        Box(modifier.size(size), contentAlignment = Alignment.CenterStart) {
+            CompositionLocalProvider(
+                LocalContentColor provides androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant,
+                content = content,
+            )
+        }
+        return
+    }
     val dark = isSystemInDarkTheme()
     val wash = if (dark) 0.24f else 0.15f
     Box(

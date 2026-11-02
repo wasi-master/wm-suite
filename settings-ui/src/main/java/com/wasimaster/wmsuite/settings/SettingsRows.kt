@@ -307,7 +307,8 @@ public fun SettingsGroup(
     // the rows once the entrance can spare them — see [rememberGroupRevealed].
     // Until then the group holds its place as slabs the size of its rows, so
     // the screen opens at its full height instead of growing under the reader.
-    if (!rememberGroupRevealed(shown)) {
+    val plain = LocalWmPlainGroups.current
+    if (!plain && !rememberGroupRevealed(shown)) {
         GroupSkeleton(shown, hasTitle = title != null)
         return
     }
@@ -336,7 +337,13 @@ public fun SettingsGroup(
                 folds?.toggle(foldId, !open)
             }
         } else if (title != null) {
-            SectionHeader(title, info = info, action = action, modifier = GroupHeadingPadding, linkable = true)
+            SectionHeader(
+                title,
+                info = info,
+                action = action,
+                modifier = if (plain) Modifier.padding(start = 16.dp, end = 16.dp, top = 12.dp, bottom = 4.dp) else GroupHeadingPadding,
+                linkable = true,
+            )
         }
         val cards: @Composable () -> Unit = {
             // The 3 dp between two cards is drawn by the card below rather
@@ -345,12 +352,16 @@ public fun SettingsGroup(
             // that has collapsed to nothing, and the group would keep a sliver
             // of air where a row used to be. Carried by the row, the gap goes
             // away with it.
-            Column(modifier = Modifier.padding(horizontal = 16.dp)) {
+            Column(modifier = if (plain) Modifier else Modifier.padding(horizontal = 16.dp)) {
                 // Which rows are drawn, and how keyed ones arrive and leave,
                 // is GroupRows' business (SettingsGroupMotion.kt); the card
                 // each one sits on is this file's.
                 GroupRows(entries) { modifier, gapAbove, first, last, content ->
                     Column(modifier = modifier) {
+                        if (plain) {
+                            content()
+                            return@Column
+                        }
                         if (gapAbove) Spacer(Modifier.height(3.dp))
                         GroupCard(
                             top = if (first) GroupEndCorner else GroupInnerCorner,
