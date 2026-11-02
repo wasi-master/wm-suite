@@ -83,6 +83,10 @@ public object SettingsHighlight {
     var targetItems: Set<String> by mutableStateOf(emptySet())
         private set
 
+    /** A row named by its words, for an app whose rows have no string resources. */
+    var targetTitle: String? by mutableStateOf(null)
+        private set
+
     /**
      * Bumped on every request.
      *
@@ -106,7 +110,17 @@ public object SettingsHighlight {
      */
     private var scrollClaimed = false
 
+    fun requestTitle(title: String) {
+        target = 0
+        targetTitle = title
+        targetItems = emptySet()
+        scrollClaimed = false
+        awaitingArrival = true
+        serial++
+    }
+
     fun request(@StringRes titleRes: Int) {
+        targetTitle = null
         target = titleRes
         targetItems = emptySet()
         scrollClaimed = false
@@ -164,6 +178,7 @@ public object SettingsHighlight {
 
     fun clear() {
         target = 0
+        targetTitle = null
         targetItems = emptySet()
         awaitingArrival = false
     }
@@ -262,7 +277,9 @@ public fun HighlightableRow(
     content: @Composable () -> Unit,
 ) {
     val target = SettingsHighlight.target
+    val named = SettingsHighlight.targetTitle
     val requested = when {
+        named != null -> title == named
         target == 0 -> false
         highlightKey != 0 -> highlightKey == target
         title == null -> false

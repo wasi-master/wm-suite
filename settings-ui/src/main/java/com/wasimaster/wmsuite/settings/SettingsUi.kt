@@ -177,11 +177,14 @@ private fun tileGlyphColor(accent: Color, dark: Boolean): Color =
     if (dark) accent else androidx.compose.ui.graphics.lerp(accent, Color.Black, 0.28f)
 
 /**
- * Asks settings screens for plain rows: no card behind a group and a bare glyph
- * instead of a tinted tile, as a stock Android settings list draws them. An app
- * sets this once, around everything, so its settings match the rest of its pages.
+ * Asks settings screens for plain rows with no card behind a group, as a stock
+ * Android settings list draws them. An app sets this once, around everything.
  */
 public val LocalWmPlainGroups: androidx.compose.runtime.ProvidableCompositionLocal<Boolean> =
+    androidx.compose.runtime.staticCompositionLocalOf { false }
+
+/** Asks for a bare glyph where a row would have a tinted tile. */
+public val LocalWmBareTiles: androidx.compose.runtime.ProvidableCompositionLocal<Boolean> =
     androidx.compose.runtime.staticCompositionLocalOf { false }
 
 /**
@@ -224,7 +227,7 @@ public fun WmIconTile(
     radius: Dp = IconTileRadius,
     content: @Composable () -> Unit,
 ) {
-    if (LocalWmPlainGroups.current) {
+    if (LocalWmBareTiles.current) {
         // The lane stays as wide as a tile, so labels line up on the usual 72 dp inset.
         Box(modifier.size(size), contentAlignment = Alignment.CenterStart) {
             CompositionLocalProvider(
