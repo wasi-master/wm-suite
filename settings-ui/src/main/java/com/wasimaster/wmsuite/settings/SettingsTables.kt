@@ -62,3 +62,24 @@ public val LocalScreenExtras = compositionLocalOf<ScreenExtras?> { null }
  * say), returning true; false falls back to [SettingsTables.routeIcon].
  */
 public val LocalCrumbGlyph = compositionLocalOf<(@Composable (route: String, tint: Color, modifier: Modifier) -> Boolean)?> { null }
+
+/**
+ * Opens a row's explanation the app's own way (a guide with more to say than
+ * one paragraph, say), given the row's title and its `info` text. Null leaves
+ * the "?" and the hold menu's "What is this?" on the kit's [InfoDialog].
+ */
+public val LocalInfoOpener = compositionLocalOf<((title: String, detail: String) -> Unit)?> { null }
+
+/**
+ * The glyph every [InfoButton] draws unless the call names its own, so an app
+ * whose icons follow a style setting can have the "?" follow it too. Null is
+ * the kit's outlined question mark.
+ */
+public val LocalInfoIcon = compositionLocalOf<ImageVector?> { null }
+
+/**
+ * False puts away every "?" on rows and headings, for someone who has asked
+ * for none. A row's long press then offers "What is this?" instead, as it
+ * does at the Simple depth, so the explanation is still one gesture away.
+ */
+public val LocalInfoButtons = compositionLocalOf { true }

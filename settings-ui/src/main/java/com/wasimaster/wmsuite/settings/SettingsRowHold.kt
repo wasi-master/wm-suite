@@ -392,16 +392,18 @@ public fun RowHoldMenu(hold: RowHold?) {
     val openLink = LocalOpenSettingLink.current
     val links = LocalSettingLinks.current
     val here = currentLinkRoute()
+    val opener = LocalInfoOpener.current
     val close = { hold.close() }
     DropdownMenu(expanded = true, onDismissRequest = close, offset = hold.at) {
         if (info != null) {
             // First, above a reason: what the row is comes before why it is off.
             DropdownMenuItem(
                 text = { Text(stringResource(R.string.home_hold_what_is_this)) },
-                leadingIcon = { Icon(Icons.AutoMirrored.Outlined.HelpOutline, null) },
+                leadingIcon = { Icon(LocalInfoIcon.current ?: Icons.AutoMirrored.Outlined.HelpOutline, null) },
                 onClick = {
                     close()
-                    hold.explain = info
+                    // Where the app explains things its own way, the same way the "?" would.
+                    if (opener != null) opener(info.title, info.detail) else hold.explain = info
                 },
             )
             if (reason != null || (target != null && (favourites != null || copies))) HorizontalDivider()

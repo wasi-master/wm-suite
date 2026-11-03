@@ -218,6 +218,11 @@ public fun SettingsGroup(
      * own [SettingsGroupScope.item] level inside a group that is shown.
      */
     level: SettingLevel = SettingLevel.BASIC,
+    /**
+     * For the group as a whole, heading and rows together: an app marking the
+     * group as one place on screen, for a tour that points at it.
+     */
+    modifier: Modifier = Modifier,
     builder: SettingsGroupScope.() -> Unit,
 ) {
     // The builder runs during composition, so rows may be added
@@ -324,7 +329,7 @@ public fun SettingsGroup(
     // fonts". Unnamed groups have nothing to match on and stay plain. Coarse,
     // because anything inside it that answers to the same request is a better
     // answer than the section around them.
-    HighlightableRow(title, highlightKey, coarse = true, revealedAt = groupRevealedAt) {
+    HighlightableRow(title, highlightKey, coarse = true, revealedAt = groupRevealedAt, modifier = modifier) {
         if (foldId != null && title != null) {
             FoldHeader(
                 title,
@@ -648,12 +653,14 @@ public fun transparentListColors(): ListItemColors =
  * [RowHoldMenu]); a heading's "?" is outside any RowExtras and stays.
  */
 @Composable
-public fun InfoButton(title: String, detail: String) {
-    if (LocalRowExtrasBare.current) return
+public fun InfoButton(title: String, detail: String, icon: ImageVector? = null) {
+    if (LocalRowExtrasBare.current || !LocalInfoButtons.current) return
     var open by remember { mutableStateOf(false) }
-    IconButton(onClick = { open = true }, modifier = Modifier.size(RowExtraSize)) {
+    // The app's own way of explaining, where it has one; the dialog otherwise.
+    val opener = LocalInfoOpener.current
+    IconButton(onClick = { if (opener != null) opener(title, detail) else open = true }, modifier = Modifier.size(RowExtraSize)) {
         Icon(
-            Icons.AutoMirrored.Outlined.HelpOutline,
+            icon ?: LocalInfoIcon.current ?: Icons.AutoMirrored.Outlined.HelpOutline,
             contentDescription = stringResource(R.string.home_info_desc, title),
             modifier = Modifier.size(18.dp),
             tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
@@ -864,6 +871,8 @@ public fun NavRow(
     swipeActions: List<SwipeAction> = emptyList(),
     /** The tile's colour, for a list of places that each have their own. Null wears the screen's. */
     accent: Color? = null,
+    /** What the row does, behind a "?" beside the chevron, as on a switch; see [InfoButton]. */
+    info: String? = null,
     onClick: () -> Unit,
 ) {
     // A value only sits beside the title while it fits there; a longer one
@@ -872,11 +881,12 @@ public fun NavRow(
     val beside = value != null && fitsBesideTitle(
         value,
         MaterialTheme.typography.labelLarge,
-        furniture = TRAILING_ICON_WIDTH + 4.dp + (if (rowLinkButtonShown()) SettingLinkTargetSize else 0.dp),
+        furniture = TRAILING_ICON_WIDTH + 4.dp + (if (rowLinkButtonShown()) SettingLinkTargetSize else 0.dp) +
+            (if (info != null && rowInfoButtonShown()) RowExtraSize else 0.dp),
         hasIcon = rowHasTile(icon),
     )
     val below = value.takeIf { it != null && !beside }
-    HighlightableRow(title, highlightKey) {
+    HighlightableRow(title, highlightKey, info = info) {
         WmRow(
             title = title,
             subtitle = subtitle.takeIf { below == null },
@@ -891,7 +901,10 @@ public fun NavRow(
             trailingOnTitleLine = beside,
             trailing = {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RowExtras { SettingLinkButton(title) }
+                    RowExtras {
+                        if (info != null) InfoButton(title, info)
+                        SettingLinkButton(title)
+                    }
                     if (beside && value != null) {
                         RowValueText(value, textAlign = TextAlign.End, maxLines = 1)
                         Spacer(Modifier.width(4.dp))

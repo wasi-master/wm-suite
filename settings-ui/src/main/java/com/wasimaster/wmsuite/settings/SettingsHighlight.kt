@@ -274,6 +274,8 @@ public fun HighlightableRow(
     info: String? = null,
     /** The level the depth would need to show this row, when it is here only for a [DepthReveal]. */
     revealedAt: SettingLevel? = LocalRevealedLevel.current,
+    /** For the row's frame, around everything [content] draws. */
+    modifier: Modifier = Modifier,
     content: @Composable () -> Unit,
 ) {
     val target = SettingsHighlight.target
@@ -297,7 +299,8 @@ public fun HighlightableRow(
     // heading takes its own, in [SettingsGroup]: the whole group would
     // otherwise answer a hold on any row inside it.
     CompositionLocalProvider(LocalRowLinkKey provides RowLinkKey(title, highlightKey)) {
-        val bare = LocalSettingsDepth.current.depth == SettingsDepth.SIMPLE
+        // Also with the app's "?" put away: the hold is then the way to the explanation.
+        val bare = LocalSettingsDepth.current.depth == SettingsDepth.SIMPLE || !LocalInfoButtons.current
         val whatIsThis = if (info != null && bare) remember(title, info) { RowInfo(title.orEmpty(), info) } else null
         val hold = if (coarse) null else rememberRowHold(disabledReason, whatIsThis)
         // A row an update brought wears a gold border until the user puts the
@@ -306,7 +309,7 @@ public fun HighlightableRow(
         HighlightFrame(
             requested = requested,
             rank = if (coarse) HighlightRank.SECTION else HighlightRank.ROW,
-            modifier = Modifier
+            modifier = modifier
                 .settingLinkHold(hold, disabledReason, whatIsThis)
                 .then(if (isNew) Modifier.border(1.5.dp, NewRowGold, RoundedCornerShape(12.dp)) else Modifier),
         ) {
