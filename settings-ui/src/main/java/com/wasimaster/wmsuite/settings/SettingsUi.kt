@@ -172,9 +172,10 @@ public val WmIconTileGlyph = 22.dp
 /**
  * The glyph colour on a tile. The stored accents are Material 400/500 mid-tones
  * picked to survive a dark toolbar; on a light tile they are washed out next to
- * the label, so they get darkened rather than kept literal.
+ * the label, so they get darkened rather than kept literal. Public for an app
+ * that paints a tile's glyph itself, a gradient say, and wants the same look.
  */
-private fun tileGlyphColor(accent: Color, dark: Boolean): Color =
+public fun tileGlyphColor(accent: Color, dark: Boolean): Color =
     if (dark) accent else androidx.compose.ui.graphics.lerp(accent, Color.Black, 0.28f)
 
 /**

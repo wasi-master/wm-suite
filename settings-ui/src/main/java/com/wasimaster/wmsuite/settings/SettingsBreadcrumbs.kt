@@ -159,7 +159,7 @@ public class SettingsCrumbTrail {
     private var openRoute: (String) -> Unit = { }
 
     /** The whole path, outermost first. */
-    internal val path: List<SettingsCrumb> get() = steps
+    public val path: List<SettingsCrumb> get() = steps
 
     /**
      * Where the trail reaches the navigator. Left unbound by the tests.
