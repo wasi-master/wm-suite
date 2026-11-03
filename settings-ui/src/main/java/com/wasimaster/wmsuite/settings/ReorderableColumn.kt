@@ -23,6 +23,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableFloatStateOf
@@ -83,6 +84,19 @@ private val ReorderSettleSpring = spring<Float>(stiffness = Spring.StiffnessMedi
  * [content] replaces the one-line label with the caller's own row body (the
  * bar order draws a preview of each row); [label] still names the row for
  * the handle's description. A taller body passes its [rowHeight].
+ *
+ * Rows arrive and leave by moving, not in one frame. A row new to [items]
+ * opens into its slot, growing from nothing to its height as it fades in; a
+ * row gone from [items] closes out of the slot it had, fading as it shrinks
+ * and taking no more taps or drags on the way; the rows under either slide
+ * by however much height it has at the time. It is the motion a keyed
+ * [SettingsGroup] row has (`GroupRows`, same timing and the same limit): the
+ * first pass, a different list altogether (more than a handful of rows at
+ * once) and everything under [LocalReduceMotion] land in one frame instead.
+ * A closing row keeps the name [label] gave it while it was listed, so
+ * [label] is only ever asked about items in [items]; [content], though, is
+ * still drawn for it for those few frames, and must not assume its item is
+ * still in [items].
  */
 @Composable
 public fun <T> ReorderableColumn(
@@ -128,21 +142,55 @@ public fun <T> ReorderableColumn(
         dragIndex = -1
         dragOffset = 0f
     }
+    val still = LocalReduceMotion.current
+    val ledger = remember { ReorderLedger<T>() }
+    // Read here so a row finishing its way out redraws the column without it.
+    @Suppress("UNUSED_EXPRESSION")
+    ledger.departures
+    val pass = planReorderRows(working, label, ledger, motion = !still)
+    SideEffect {
+        ledger.settled = true
+        ledger.drawn = pass.rows
+        ledger.gone.retainAll { k -> pass.rows.any { it.leaving && it.key == k } }
+    }
     Column(modifier = modifier) {
-        working.forEachIndexed { index, item ->
-            val rowKey = reorderKey(working, index)
+        pass.rows.forEach { row ->
+            val rowKey = row.key
+            val item = row.item
+            val leaving = row.leaving
             key(rowKey) {
-                val liveIndex by rememberUpdatedState(index)
+                // -1 once the row is on its way out: it has no place in the
+                // order any more, so a drag cannot pick it up.
+                val liveIndex by rememberUpdatedState(row.index)
+                // Decided once, in the pass that brings the row in, so a row
+                // that is going to open draws its first frame closed rather
+                // than flashing in at full height first.
+                val presence = remember { RowPresence(shown = !pass.animateArrivals) }
+                val moving = leaving || presence.partial
+                if (moving) {
+                    LaunchedEffect(leaving) {
+                        if (leaving) {
+                            presence.amount.animateTo(0f, RowPresenceSpec)
+                            ledger.depart(rowKey)
+                        } else {
+                            // Arriving, or put back (an undo) while still closing.
+                            presence.amount.animateTo(1f, RowPresenceSpec)
+                        }
+                    }
+                }
                 ReorderRow(
-                    dragging = index == dragIndex,
+                    dragging = !leaving && row.index == dragIndex,
                     dragOffset = dragOffset,
                     settleTo = settling[rowKey] ?: 0f,
                     onSettled = { settling.remove(rowKey) },
                     rowHeight = rowHeight,
-                    position = index + 1,
-                    label = label(item),
+                    position = row.number,
+                    label = row.name,
                     onDelete = onDelete?.let { delete -> { delete(item) } },
-                    deletable = !keepLast || working.size > 1,
+                    // A closing row keeps the bin it was deleted with: flipping
+                    // it would rebuild the row halfway out.
+                    deletable = leaving || !keepLast || working.size > 1,
+                    modifier = if (moving) Modifier.rowPresence(presence, leaving) else Modifier,
                     handle = Modifier.pointerInput(rowPx) {
                         detectDragGestures(
                             onDragStart = {
@@ -183,7 +231,7 @@ public fun <T> ReorderableColumn(
                         content(item)
                     } else {
                         Text(
-                            label(item),
+                            row.name,
                             style = MaterialTheme.typography.bodyLarge,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
@@ -207,12 +255,104 @@ private fun <T> reorderKey(list: List<T>, index: Int): Any {
     return item to nth
 }
 
+/** [reorderKey] for every row of [list] in one walk. */
+private fun <T> reorderKeys(list: List<T>): List<Any> {
+    val seen = HashMap<T, Int>()
+    return list.map { item ->
+        val nth = seen[item] ?: 0
+        seen[item] = nth + 1
+        item to nth
+    }
+}
+
+/**
+ * One row as a [ReorderableColumn] draws it on this pass. [index] is its
+ * place in the order, or -1 for a row that has left [ReorderableColumn]'s
+ * items and is closing out of the slot it had; [number] and [name] are what
+ * it shows, which a closing row keeps from its last pass in the list.
+ */
+private class ShownRow<T>(val key: Any, val item: T, val index: Int, val number: Int, val name: String) {
+    val leaving: Boolean get() = index < 0
+}
+
+/** What a pass draws, and whether a row new to it opens or simply appears. */
+private class ReorderPass<T>(val rows: List<ShownRow<T>>, val animateArrivals: Boolean)
+
+/**
+ * What the column remembers between passes, as a group's ledger does in
+ * SettingsGroupMotion.kt: what it drew, and which of the closing rows have
+ * finished.
+ */
+private class ReorderLedger<T> {
+    /** False until the column has drawn once. Rows there from the first pass arrive in place. */
+    var settled = false
+
+    /** The last committed pass, closing rows included. Written in a SideEffect, never in composition. */
+    var drawn: List<ShownRow<T>> = emptyList()
+
+    /** Keys whose way out has finished, to be left out of the next pass. */
+    val gone = HashSet<Any>()
+
+    /** Bumped when a row finishes leaving, so the column draws once more without it. */
+    var departures by mutableIntStateOf(0)
+
+    fun depart(key: Any) {
+        gone += key
+        departures++
+    }
+}
+
+/**
+ * Lines this pass's rows up with the last one's: [working] as it stands, plus
+ * each row drawn last time that is not in it now, kept after whichever of its
+ * old neighbours is still here so it closes where it was.
+ *
+ * A drag only ever moves rows, so it never brings one in or sends one out;
+ * these are the caller's own edits, adopted between drags.
+ */
+private fun <T> planReorderRows(
+    working: List<T>,
+    label: (T) -> String,
+    ledger: ReorderLedger<T>,
+    motion: Boolean,
+): ReorderPass<T> {
+    val keys = reorderKeys(working)
+    val current = working.mapIndexed { i, item -> ShownRow(keys[i], item, i, i + 1, label(item)) }
+    if (!motion || !ledger.settled) return ReorderPass(current, animateArrivals = false)
+    val before = ledger.drawn
+    val keysNow = keys.toHashSet()
+    val keysBefore = before.mapNotNullTo(HashSet()) { row -> row.key.takeIf { !row.leaving } }
+    val animateArrivals = keys.count { it !in keysBefore } <= RowMotionBulkLimit
+    val departing = before.filter { it.key !in keysNow && it.key !in ledger.gone }
+    // Rows already on their way out finish going; it is the fresh departures
+    // that decide whether this pass is an edit or a different list.
+    if (departing.isEmpty() || departing.count { !it.leaving } > RowMotionBulkLimit) {
+        return ReorderPass(current, animateArrivals)
+    }
+    val out = ArrayList<ShownRow<T>>(current.size + departing.size)
+    out.addAll(current)
+    // Where in [out] the last row walked past landed.
+    var anchor = -1
+    for (row in before) {
+        when (row.key) {
+            in keysNow -> anchor = out.indexOfFirst { !it.leaving && it.key == row.key }
+            in ledger.gone -> Unit
+            else -> {
+                out.add(anchor + 1, if (row.leaving) row else ShownRow(row.key, row.item, -1, row.number, row.name))
+                anchor++
+            }
+        }
+    }
+    return ReorderPass(out, animateArrivals)
+}
+
 /**
  * One row of a [ReorderableColumn]: position, the caller's body, the
  * optional bin and the handle. While dragged it rides above its neighbours
  * on a raised card at [dragOffset]; otherwise it draws at [settleTo] and
  * springs to zero, so a row that just changed slots slides into it rather
- * than appearing there.
+ * than appearing there. [modifier] carries the row's opening or closing,
+ * when it has one.
  */
 @Composable
 private fun ReorderRow(
@@ -226,6 +366,7 @@ private fun ReorderRow(
     onDelete: (() -> Unit)?,
     deletable: Boolean,
     handle: Modifier,
+    modifier: Modifier = Modifier,
     content: @Composable RowScope.() -> Unit,
 ) {
     val settle = remember { Animatable(0f) }
@@ -254,7 +395,7 @@ private fun ReorderRow(
     SwipeActionsRow(
         actions = if (onDelete != null) listOf(deleteSwipeAction(removeDesc, onDelete)) else emptyList(),
         enabled = deletable,
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .height(rowHeight)
             // The dragged row rides above its neighbours.

@@ -42,6 +42,9 @@ import kotlin.math.roundToInt
  * as it always was, so the hundreds of fixed settings rows pay nothing for any
  * of this; neither does a keyed row once it has arrived, which is drawn bare
  * until the next time it moves.
+ *
+ * [ReorderableColumn] opens and closes its rows with the same pieces, so a row
+ * added to a reorderable list moves the way a row added to a group does.
  */
 
 /** How long a keyed row takes to open into its group, or to close out of it. */
@@ -54,9 +57,9 @@ private const val RowPresenceMs = 180
  * as they did before. Opening a hundred rows at once would be a hundred
  * animations for the eye to read as noise, and a frame budget spent on them.
  */
-private const val RowMotionBulkLimit = 8
+internal const val RowMotionBulkLimit = 8
 
-private val RowPresenceSpec = tween<Float>(RowPresenceMs, easing = FastOutSlowInEasing)
+internal val RowPresenceSpec = tween<Float>(RowPresenceMs, easing = FastOutSlowInEasing)
 
 /** One row as the group draws it on this pass: in the builder's list, or just out of it and on its way. */
 private class DrawnRow(val entry: SettingsGroupScope.Entry, val leaving: Boolean) {
@@ -81,7 +84,7 @@ private class GroupPass(val rows: List<DrawnRow>, val animateArrivals: Boolean)
  * move: the frames in between are relayouts and redraws of this row alone.
  */
 @Stable
-private class RowPresence(shown: Boolean) {
+internal class RowPresence(shown: Boolean) {
     val amount = Animatable(if (shown) 1f else 0f)
     val partial: Boolean by derivedStateOf { amount.value < 1f }
 }
@@ -188,7 +191,7 @@ private fun planRows(items: List<SettingsGroupScope.Entry>, ledger: GroupRowLedg
  * fade and the clip together, modulating rather than compositing so nothing
  * overflowing the card — a ripple, a shadow — is cut by an offscreen buffer.
  */
-private fun Modifier.rowPresence(presence: RowPresence, leaving: Boolean): Modifier = this
+internal fun Modifier.rowPresence(presence: RowPresence, leaving: Boolean): Modifier = this
     .graphicsLayer {
         val amount = presence.amount.value
         alpha = if (leaving) {
