@@ -11,7 +11,7 @@ private const val SYMBOL_BOX = 960f
 
 /**
  * One Material Symbols glyph as a 24 dp [ImageVector], for the generated icons
- * in [SymbolIcons] and the `symbols` package (see `scripts/gen_symbol_icons.py`).
+ * in [SymbolIcons] and the `symbols` package (see `tools/gen_symbol_icons.py`).
  *
  * Symbols put their origin at the *bottom* left (viewBox `0 -960 960 960`), so
  * the path rides in a group shifted down by the box height. Built in black like
