@@ -338,9 +338,9 @@ fun scrollRailColors(
  * The list under the rail, in pixels, whoever is keeping them.
  *
  * A plain `ScrollState` knows all three numbers outright. A lazy list knows
- * only the items it has laid out, so its rail works from the average of those,
- * which is exact for rows of one height and close enough for the rest. The
- * alternative is measuring ten thousand rows to draw a thumb.
+ * only the items it has laid out, so its rail keeps each row's height once seen
+ * and guesses the rest from those. The alternative is measuring ten thousand
+ * rows to draw a thumb.
  */
 internal interface RailScroll {
     val state: ScrollableState
@@ -375,30 +375,70 @@ private class PlainRailScroll(private val scroll: ScrollState) : RailScroll {
     override val scrollable: Boolean get() = scroll.maxValue > 0
 }
 
+/**
+ * A lazy list, measured row by row. One average across the rows on screen put the thumb wherever
+ * the mix on screen said: a tall card at the top of a list of short folder rows made every row
+ * count as tall while the card was in view, and short once it scrolled away, so the thumb jumped
+ * and the list seemed to change length. Each row's height is kept once it has been on screen,
+ * and only a row never seen is guessed, from the average of those that were.
+ *
+ * Rows are kept by position, with the key each position held. When a folder opens or closes,
+ * the rows below it move, and the first row on screen found holding another key than before
+ * drops what was kept from there down. Rows above it keep their heights, which is where the
+ * header and the folders already scrolled past are.
+ */
 private class LazyListRailScroll(private val list: LazyListState) : RailScroll {
     override val state: ScrollableState get() = list
+
+    /** By position: the key it held when last laid out, and its height with the gap after it. */
+    private val seen = ArrayList<Pair<Any, Int>?>()
+
+    /** Pixels before each position, worked out once per layout. */
+    private var before = LongArray(1)
+    private var measuredFor: androidx.compose.foundation.lazy.LazyListLayoutInfo? = null
+
+    private fun before(): LongArray {
+        val info = list.layoutInfo
+        if (info === measuredFor) return before
+        measuredFor = info
+        val total = info.totalItemsCount
+        val visible = info.visibleItemsInfo
+        val moved = visible.firstOrNull { item -> seen.getOrNull(item.index)?.let { it.first != item.key } == true }?.index
+        val keep = minOf(moved ?: seen.size, total)
+        while (seen.size > keep) seen.removeAt(seen.size - 1)
+        visible.forEach { item ->
+            while (seen.size <= item.index) seen.add(null)
+            seen[item.index] = item.key to (item.size + info.mainAxisItemSpacing)
+        }
+        val known = seen.filterNotNull()
+        val guess = if (known.isEmpty()) 1L else known.sumOf { it.second.toLong() } / known.size
+        val sums = LongArray(total + 1)
+        for (index in 0 until total) {
+            sums[index + 1] = sums[index] + (seen.getOrNull(index)?.second?.toLong() ?: guess)
+        }
+        before = sums
+        return sums
+    }
 
     override val extentPx: Float
         get() = with(list.layoutInfo) { (viewportEndOffset - viewportStartOffset).toFloat() }
 
-    override val totalPx: Float get() = itemPx * list.layoutInfo.totalItemsCount
+    override val totalPx: Float
+        get() = with(list.layoutInfo) { before().last() + beforeContentPadding + afterContentPadding }.toFloat()
 
     override val offsetPx: Float
-        get() = list.firstVisibleItemIndex * itemPx + list.firstVisibleItemScrollOffset
+        get() {
+            val sums = before()
+            return (sums[list.firstVisibleItemIndex.coerceIn(0, sums.size - 1)] + list.firstVisibleItemScrollOffset).toFloat()
+        }
 
     override val scrollable: Boolean
         get() = list.canScrollForward || list.canScrollBackward
 
-    override fun pxForIndex(index: Int): Float = index * itemPx
-
-    /** One row, averaged over the rows on screen, spacing included. */
-    private val itemPx: Float
-        get() {
-            val visible = list.layoutInfo.visibleItemsInfo
-            if (visible.isEmpty()) return 1f
-            val spread = visible.last().offset + visible.last().size - visible.first().offset
-            return (spread.toFloat() / visible.size).coerceAtLeast(1f)
-        }
+    override fun pxForIndex(index: Int): Float {
+        val sums = before()
+        return sums[index.coerceIn(0, sums.size - 1)].toFloat()
+    }
 }
 
 private class LazyGridRailScroll(private val grid: LazyGridState) : RailScroll {
