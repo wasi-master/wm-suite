@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -413,11 +414,13 @@ private fun ReorderRow(
                 .fillMaxWidth()
                 .height(rowHeight),
         ) {
+            // The place in the list, in the gutter a list row's leading icon would have.
             Text(
                 stringResource(R.string.rows_reorder_position_label, position),
-                style = MaterialTheme.typography.bodyMedium,
+                style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.width(28.dp),
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                modifier = Modifier.padding(start = 12.dp, end = 4.dp).width(24.dp),
             )
             content()
             if (onDelete != null) {
@@ -429,14 +432,21 @@ private fun ReorderRow(
                     )
                 }
             }
-            Icon(
-                Icons.Outlined.DragHandle,
-                contentDescription = stringResource(R.string.rows_reorder_handle_desc, label),
+            // A full 48 dp grip, clear of the screen's edge; the icon in its middle.
+            Box(
+                contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .padding(start = 8.dp)
-                    .size(28.dp)
+                    .padding(end = 4.dp)
+                    .size(48.dp)
                     .then(handle),
-            )
+            ) {
+                Icon(
+                    Icons.Outlined.DragHandle,
+                    contentDescription = stringResource(R.string.rows_reorder_handle_desc, label),
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(24.dp),
+                )
+            }
         }
     }
 }
