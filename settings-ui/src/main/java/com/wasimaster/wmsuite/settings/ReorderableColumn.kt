@@ -82,6 +82,11 @@ private val ReorderSettleSpring = spring<Float>(stiffness = Spring.StiffnessMedi
  * never removable unless [keepLast] says otherwise: a bar's rows have to keep
  * one, while a list of snippet folders is perfectly good empty.
  *
+ * [actions] puts more buttons behind each row's swipe, before the bin (a list
+ * of engines switches one off from there), and [binButton] false leaves the bin
+ * to the swipe alone, for rows whose own page also removes them and whose
+ * width is spoken for.
+ *
  * [content] replaces the one-line label with the caller's own row body (the
  * bar order draws a preview of each row); [label] still names the row for
  * the handle's description. A taller body passes its [rowHeight].
@@ -108,6 +113,8 @@ public fun <T> ReorderableColumn(
     onDelete: ((T) -> Unit)? = null,
     keepLast: Boolean = true,
     rowHeight: Dp = ReorderRowHeight,
+    actions: ((T) -> List<SwipeAction>)? = null,
+    binButton: Boolean = true,
     content: (@Composable RowScope.(T) -> Unit)? = null,
 ) {
     var working by remember { mutableStateOf(items) }
@@ -188,6 +195,8 @@ public fun <T> ReorderableColumn(
                     position = row.number,
                     label = row.name,
                     onDelete = onDelete?.let { delete -> { delete(item) } },
+                    actions = actions?.invoke(item).orEmpty(),
+                    binButton = binButton,
                     // A closing row keeps the bin it was deleted with: flipping
                     // it would rebuild the row halfway out.
                     deletable = leaving || !keepLast || working.size > 1,
@@ -365,6 +374,8 @@ private fun ReorderRow(
     position: Int,
     label: String,
     onDelete: (() -> Unit)?,
+    actions: List<SwipeAction>,
+    binButton: Boolean,
     deletable: Boolean,
     handle: Modifier,
     modifier: Modifier = Modifier,
@@ -394,8 +405,8 @@ private fun ReorderRow(
     // row is rather than on whether it is being dragged: flipping it mid-drag
     // would rebuild the row and drop the grip's gesture under the finger.
     SwipeActionsRow(
-        actions = if (onDelete != null) listOf(deleteSwipeAction(removeDesc, onDelete)) else emptyList(),
-        enabled = deletable,
+        actions = actions + if (onDelete != null && deletable) listOf(deleteSwipeAction(removeDesc, onDelete)) else emptyList(),
+        enabled = deletable || actions.isNotEmpty(),
         modifier = modifier
             .fillMaxWidth()
             .height(rowHeight)
@@ -423,7 +434,7 @@ private fun ReorderRow(
                 modifier = Modifier.padding(start = 12.dp, end = 4.dp).width(24.dp),
             )
             content()
-            if (onDelete != null) {
+            if (onDelete != null && binButton) {
                 IconButton(onClick = onDelete, enabled = deletable) {
                     Icon(
                         Icons.Outlined.Delete,
